@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sự Kiện - Bang Hoa Sơn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@300;400;700;900&family=Playfair+Display:wght@400;700;900&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@300;400;700;900&family=Playfair+Display:wght@400;700;900&family=Noto+Serif:wght@400;700&display=swap');
+
+        /* Font chữ tiếng Việt có dấu tốt hơn */
+        @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;700;900&display=swap');
+
+        /* Font thư pháp hỗ trợ Unicode tốt */
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Alex+Brush&family=Satisfy&family=Pacifico&family=Lobster&family=Kalam:wght@300;400;700&family=ZCOOL+XiaoWei&family=ZCOOL+KuaiLe&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Hoa Sơn</h1>
+                <span>Đánh trung lập cho nó chọn phe</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Trang Chủ</a></li>
+                    <li><a href="index.html#gioi-thieu" class="nav-link">Giới Thiệu</a></li>
+                    <li><a href="index.html#tuyen-dung" class="nav-link">Tuyển Dụng</a></li>
+                    <li><a href="mua-ban.html" class="nav-link">Mua Bán</a></li>
+                    <li><a href="index.html#tin-tuc" class="nav-link">Tin Tức</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Breadcrumb -->
+        <section class="breadcrumb-section">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Trang Chủ</a>
+                    <span><i class="fas fa-chevron-right"></i></span>
+                    <a href="index.html#tin-tuc">Tin Tức</a>
+                    <span><i class="fas fa-chevron-right"></i></span>
+                    <span class="current">Chi Tiết Sự Kiện</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chi Tiết Sự Kiện Section -->
+        <section class="section event-detail">
+            <div class="container">
+                <div class="event-detail-container">
+                    <div class="event-header">
+                        <h1 id="event-title" class="event-title">Đang tải...</h1>
+                        <div class="event-meta">
+                            <span class="event-type" id="event-type">Sự Kiện</span>
+                            <span class="event-date" id="event-date">Đang tải...</span>
+                            <span class="event-views" id="event-views">0 lượt xem</span>
+                        </div>
+                    </div>
+
+                    <div class="event-image">
+                        <img id="event-image" src="https://via.placeholder.com/800x400/8B4513/FFFFFF?text=Sự+Kiện" alt="Sự Kiện">
+                    </div>
+
+                    <div class="event-content">
+                        <div class="event-excerpt" id="event-excerpt">
+                            Đang tải nội dung...
+                        </div>
+
+                        <div class="event-body" id="event-body">
+                            Đang tải nội dung chi tiết...
+                        </div>
+
+                        <div class="event-author">
+                            <span>Tác giả: </span>
+                            <span id="event-author">Đang tải...</span>
+                        </div>
+                    </div>
+
+                    <div class="event-actions">
+                        <button class="btn btn-primary" onclick="window.history.back()">
+                            <i class="fas fa-arrow-left"></i> Quay Lại
+                        </button>
+                        <button class="btn btn-secondary" onclick="shareEvent()">
+                            <i class="fas fa-share-alt"></i> Chia Sẻ
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Related Events -->
+                <div class="related-events">
+                    <h3 class="related-title">Sự Kiện Liên Quan</h3>
+                    <div class="related-grid" id="related-events">
+                        <!-- Related events will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bang Hoa Sơn</h3>
+                    <p>Bang hội võ hiệp đỉnh cao với truyền thống lâu đời và tinh thần đoàn kết</p>
+                    <div class="social-links">
+                        <a href="https://discord.gg/42WP55wtGx" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitch"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Liên Kết Nhanh</h4>
+                    <ul>
+                        <li><a href="index.html#gioi-thieu">Giới Thiệu</a></li>
+                        <li><a href="mua-ban.html">Mua Bán</a></li>
+                        <li><a href="index.html#tin-tuc">Tin Tức</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quy Định</h4>
+                    <ul>
+                        <li><a href="#">Điều Khoản Sử Dụng</a></li>
+                        <li><a href="#">Chính Sách Bảo Mật</a></li>
+                        <li><a href="#">Quy Định Bang Hội</a></li>
+                        <li><a href="#">Hướng Dẫn Mua Bán</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Bang Hoa Sơn. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Load event details from JSON
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const eventId = urlParams.get('id');
+
+            if (eventId) {
+                loadEventDetail(eventId);
+            } else {
+                // If no ID provided, redirect to news page
+                window.location.href = 'index.html#tin-tuc';
+            }
+        });
+
+        function loadEventDetail(eventId) {
+            fetch('su-kien.json')
+                .then(response => response.json())
+                .then(data => {
+                    const event = data.events.find(e => e.id == eventId);
+
+                    if (event) {
+                        document.getElementById('event-title').textContent = event.title;
+                        document.getElementById('event-type').textContent = getTypeLabel(event.type);
+                        document.getElementById('event-date').textContent = event.date;
+                        document.getElementById('event-views').textContent = event.views + ' lượt xem';
+                        document.getElementById('event-image').src = event.image;
+                        document.getElementById('event-image').alt = event.title;
+                        document.getElementById('event-excerpt').textContent = event.excerpt;
+                        document.getElementById('event-body').innerHTML = event.content;
+                        document.getElementById('event-author').textContent = event.author;
+
+                        // Update page title
+                        document.title = event.title + ' - Bang Hoa Sơn';
+
+                        // Load related events
+                        loadRelatedEvents(eventId, data.events);
+                    } else {
+                        // Event not found
+                        document.getElementById('event-title').textContent = 'Không tìm thấy sự kiện';
+                        document.getElementById('event-body').innerHTML = '<p>Sự kiện bạn tìm kiếm không tồn tại hoặc đã bị xóa.</p>';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error loading event details:', error);
+                    document.getElementById('event-title').textContent = 'Lỗi tải dữ liệu';
+                    document.getElementById('event-body').innerHTML = '<p>Đã xảy ra lỗi khi tải thông tin sự kiện. Vui lòng thử lại sau.</p>';
+                });
+        }
+
+        function getTypeLabel(type) {
+            switch(type) {
+                case 'event': return 'Sự Kiện';
+                case 'inform': return 'Thông Báo';
+                case 'news': return 'Tin Tức';
+                default: return 'Tin Tức';
+            }
+        }
+
+        function loadRelatedEvents(currentEventId, allEvents) {
+            const relatedContainer = document.getElementById('related-events');
+            const relatedEvents = allEvents.filter(e => e.id != currentEventId).slice(0, 3);
+
+            relatedEvents.forEach(event => {
+                const eventCard = document.createElement('div');
+                eventCard.className = 'related-event-card';
+                eventCard.innerHTML = `
+                    <div class="related-event-image">
+                        <img src="${event.image}" alt="${event.title}">
+                    </div>
+                    <div class="related-event-content">
+                        <h4><a href="chi-tiet-su-kien.html?id=${event.id}">${event.title}</a></h4>
+                        <p class="related-event-date">${event.date}</p>
+                    </div>
+                `;
+                relatedContainer.appendChild(eventCard);
+            });
+        }
+
+        function shareEvent() {
+            if (navigator.share) {
+                navigator.share({
+                    title: document.getElementById('event-title').textContent,
+                    text: document.getElementById('event-excerpt').textContent,
+                    url: window.location.href
+                });
+            } else {
+                // Fallback - copy link to clipboard
+                navigator.clipboard.writeText(window.location.href)
+                    .then(() => {
+                        alert('Đã sao chép liên kết vào clipboard!');
+                    })
+                    .catch(err => {
+                        console.error('Error copying link: ', err);
+                    });
+            }
+        }
+    </script>
+</body>
+</html>

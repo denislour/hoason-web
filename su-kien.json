@@ -1,0 +1,48 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Nghịch Thủy Hàn: Phát Lộc Toàn Dan Đón Lộc Tuần 3",
+      "type": "event",
+      "date": "15/10/2023",
+      "image": "https://via.placeholder.com/800x400/8B4513/FFFFFF?text=Phát+Lộc+Toàn+Dan",
+      "excerpt": "Sự kiện Phát Lộc Toàn Dan đã bước vào tuần 3 với nhiều phần thưởng giá trị đang chờ đợi người chơi. Hãy tham gia ngay để nhận những phần quà hấp dẫn!",
+      "content": "<p>Sự kiện Phát Lộc Toàn Dan đã bước vào tuần 3 với nhiều phần thưởng giá trị đang chờ đợi người chơi. Đây là cơ hội tuyệt vời để nhận được những vật phẩm hiếm và nâng cấp nhân vật của bạn.</p><p>Trong tuần 3 này, người chơi sẽ có cơ hội nhận được:</p><ul><li>Kim Nguyên Bảo x10,000</li><li>Voucher giảm giá 50% cho cửa hàng</li><li>Skin độc quyền chỉ có trong sự kiện</li><li>Nhiều vật phẩm nâng cấp khác</li></ul><p>Để tham gia sự kiện, người chơi cần hoàn thành các nhiệm vụ hàng ngày và tích lũy điểm sự kiện. Điểm càng cao, phần thưởng càng giá trị!</p><p>Sự kiện sẽ kéo dài đến hết ngày 25/10/2023. Đừng bỏ lỡ cơ hội này nhé!</p>",
+      "author": "Ban Quản Trị",
+      "views": 1523
+    },
+    {
+      "id": 2,
+      "title": "Nghịch Thủy Hàn: Thông Báo Ngày Chính Thức Ra Mắt",
+      "type": "inform",
+      "date": "10/10/2023",
+      "image": "https://via.placeholder.com/800x400/4169E1/FFFFFF?text=Thông+Báo+Ra+Mắt",
+      "excerpt": "Ngày ra mắt chính thức của Nghịch Thủy Hàn đã được công bố với nhiều ưu đãi đặc biệt cho người chơi mới. Hãy sẵn sàng bước vào thế giới võ hiệp đỉnh cao!",
+      "content": "<p>Sau thời gian chờ đợi, chúng tôi vui mừng thông báo ngày ra mắt chính thức của Nghịch Thủy Hàn là ngày 15/10/2023.</p><p>Nhân dịp ra mắt, chúng tôi đã chuẩn bị nhiều ưu đãi hấp dẫn:</p><ul><li>Tặng 100.000 Kim Nguyên Bảo cho người chơi mới</li><li>Gói VIP 7 ngày miễn phí</li><li>Skin độc quyền ra mắt</li><li>Giảm giá 30% tất cả các gói nạp trong tuần đầu tiên</li></ul><p>Người chơi có thể tải game từ các kênh chính thức:</p><ul><li>App Store</li><li>Google Play Store</li><li>Website chính thức: nghichthuyhan.vnggames.com</li></ul><p>Hãy sẵn sàng trải nghiệm thế giới võ hiệp đỉnh cao với đồ họa tuyệt đẹp và gameplay đột phá!</p>",
+      "author": "Ban Quản Trị",
+      "views": 2541
+    },
+    {
+      "id": 3,
+      "title": "Nghịch Thủy Hàn: Miễn Phí 244 Skin Chất Lượng",
+      "type": "news",
+      "date": "05/10/2023",
+      "image": "https://via.placeholder.com/800x400/32CD32/FFFFFF?text=Miễn+Phí+Skin",
+      "excerpt": "Sự kiện đặc biệt tặng miễn phí 244 skin chất lượng cao cho tất cả người chơi trong tuần lễ ra mắt. Cơ hội tuyệt vời để sưu tầm những skin đẹp nhất!",
+      "content": "<p>Nhân dịp ra mắt, Nghịch Thủy Hàn tổ chức sự kiện đặc biệt tặng miễn phí 244 skin chất lượng cao cho tất cả người chơi.</p><p>Để nhận được những skin này, người chơi chỉ cần:</p><ol><li>Đăng nhập tài khoản trong tuần lễ ra mắt (từ 15/10 đến 22/10)</li><li>Hoàn thành nhiệm vụ chào mừng</li><li>Nhận quà tại hộp thư trong game</li></ol><p>Các skin được tặng bao gồm:</p><ul><li>50 skin SSS rarity</li><li>80 skin SS rarity</li><li>114 skin S rarity</li></ul><p>Đây là cơ hội duy nhất để sở hữu những skin hiếm mà không cần tốn Kim Nguyên Bảo. Đừng bỏ lỡ!</p>",
+      "author": "Ban Quản Trị",
+      "views": 3872
+    },
+    {
+      "id": 4,
+      "title": "NPC AI Có Tính Cách, Ký Ức và Số Phận trong Nghịch Thủy Hàn",
+      "type": "news",
+      "date": "28/09/2023",
+      "image": "https://via.placeholder.com/800x400/9370DB/FFFFFF?text=NPC+AI",
+      "excerpt": "Khám phá hệ thống NPC AI đột phá trong Nghịch Thủy Hàn với tính cách, ký ức và số phận riêng biệt. Mỗi NPC là một câu chuyện đang chờ bạn khám phá!",
+      "content": "<p>Một trong những tính năng đột phá của Nghịch Thủy Hàn là hệ thống NPC AI thông minh với tính cách, ký ức và số phận riêng biệt.</p><p>Khác với các game võ hiệp truyền thống, NPC trong Nghịch Thủy Hàn có:</p><ul><li><strong>Hệ thống tính cách độc đáo:</strong> Mỗi NPC có tính cách riêng, ảnh hưởng đến cách họ tương tác với người chơi</li><li><strong>Ký ức và lịch sử:</strong> NPC nhớ những lần tương tác trước đó và có những cuộc hội thoại thay đổi theo thời gian</li><li><strong>Số phận riêng:</strong> NPC có câu chuyện và số phận riêng, người chơi có thể ảnh hưởng đến số phận của họ</li></ul><p>Hệ thống này tạo ra một thế giới sống động, nơi mỗi NPC không chỉ là một nhiệm vụ mà là một nhân vật có chiều sâu.</p><p>Người chơi có thể xây dựng mối quan hệ với NPC, nhận được những nhiệm vụ ẩn và khám phá những câu chuyện thú vị đằng sau mỗi nhân vật.</p>",
+      "author": "Đội Ngũ Phát Triển",
+      "views": 2134
+    }
+  ]
+}
