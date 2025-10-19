@@ -412,14 +412,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 top: 70px;
                 left: 0;
                 width: 100%;
-                background-color: #fff;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                background-color: #000000;
+                box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
                 padding: 20px;
                 transform: translateY(-100%);
                 opacity: 0;
                 visibility: hidden;
                 transition: all 0.3s ease;
                 z-index: 999;
+                border-bottom: 1px solid #FFD700;
             }
 
             .main-nav.active {
@@ -433,7 +434,20 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             .main-nav ul li {
-                margin: 10px 0;
+                margin: 15px 0;
+            }
+
+            .main-nav ul li a {
+                font-size: 1.2rem;
+                text-align: center;
+                display: block;
+                padding: 10px;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+            }
+
+            .main-nav ul li a:hover {
+                background-color: rgba(255, 215, 0, 0.1);
             }
         }
     `;
