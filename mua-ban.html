@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khu Mua Bán - Bang Hoa Sơn</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@300;400;700;900&family=Playfair+Display:wght@400;700;900&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@300;400;700;900&family=Playfair+Display:wght@400;700;900&family=Noto+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@300;400;700;900&family=Playfair+Display:wght@400;700;900&family=Noto+Serif:wght@400;700&display=swap');
 
@@ -17,7 +20,8 @@
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
+
+<body class="mua-ban-page">
     <header class="header">
         <div class="container">
             <div class="logo">
@@ -29,8 +33,8 @@
                     <li><a href="index.html" class="nav-link">Trang Chủ</a></li>
                     <li><a href="index.html#gioi-thieu" class="nav-link">Giới Thiệu</a></li>
                     <li><a href="index.html#tuyen-dung" class="nav-link">Tuyển Dụng</a></li>
-                    <li><a href="mua-ban.html" class="nav-link active">Mua Bán</a></li>
-                    <li><a href="index.html#tin-tuc" class="nav-link">Tin Tức</a></li>
+                    <li><a href="mua-ban-new.html" class="nav-link active">Mua Bán</a></li>
+                    <!-- <li><a href="index.html#tin-tuc" class="nav-link">Tin Tức</a></li> -->
                     <li><a href="index.html#lien-he" class="nav-link">Liên Hệ</a></li>
                 </ul>
             </nav>
@@ -46,765 +50,41 @@
             <div class="container">
                 <div class="hero-content">
                     <h2>Khu Mua Bán Hoa Sơn</h2>
-                    <p>Nơi giao dịch các vật phẩm quý giá của võ lâm</p>
+                    <p>Nơi giao dịch các vật phẩm quý giá</p>
                 </div>
             </div>
         </section>
 
-        <!-- Mua Bán Section -->
+        <!-- Coming Soon Section -->
         <section class="section mua-ban">
             <div class="container">
-                <h2 class="section-title">Khu Mua Bán</h2>
-
-                <div class="mua-ban-tabs">
-                    <button class="tab-btn active" data-tab="acc-new">Acc Mới</button>
-                    <button class="tab-btn" data-tab="acc-old">Acc Cũ</button>
-                    <button class="tab-btn" data-tab="acc-vip">Acc VIP</button>
-                    <button class="tab-btn" data-tab="acc-event">Acc Sự Kiện</button>
-                </div>
-
-                <div class="tab-content">
-                    <!-- Acc Mới Tab -->
-                    <div id="acc-new" class="tab-pane active">
-                        <div class="items-grid">
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/FF6347/FFFFFF?text=Nghịch+Thủy+Hàn" alt="Acc Nghịch Thủy Hàn Mới">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Acc Nghịch Thủy Hàn Mới</h4>
-                                    <p class="item-desc">Server mới, rank Kim Bạc, full hero S+</p>
-                                    <div class="item-price">
-                                        <span class="price">2.500.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">HoaSonTrader</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
+                <div class="coming-soon-container">
+                    <div class="coming-soon-content">
+                        <i class="fas fa-clock coming-soon-icon"></i>
+                        <h2 class="coming-soon-title">Coming Soon</h2>
+                        <p class="coming-soon-description">
+                            Khu mua bán của Hoa Sơn đang được xây dựng và sẽ sớm ra mắt!<br>
+                            Đây sẽ là nơi tập trung các vật phẩm quý giá, tài khoản game và nhiều hơn nữa.<br>
+                            Hãy quay lại sau để không bỏ lỡ những món đồ giá trị!
+                        </p>
+                        <div class="coming-soon-features">
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Giao dịch an toàn</span>
                             </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/4169E1/FFFFFF?text=Acc+VIP+Mới" alt="Acc VIP Mới">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Acc VIP Mới</h4>
-                                    <p class="item-desc">VIP 30 ngày, rank Hoàng Kim, full skin</p>
-                                    <div class="item-price">
-                                        <span class="price">5.000.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">VIPSeller</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
+                            <div class="feature-item">
+                                <i class="fas fa-gem"></i>
+                                <span>Vật phẩm đa dạng</span>
                             </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/32CD32/FFFFFF?text=Acc+Full+Hero" alt="Acc Full Hero">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Acc Full Hero</h4>
-                                    <p class="item-desc">Tất cả hero, rank Bạch Kim, 500+ trận</p>
-                                    <div class="item-price">
-                                        <span class="price">3.500.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">HeroMaster</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/FF8C00/FFFFFF?text=Acc+Rank+Cao" alt="Acc Rank Cao">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Acc Rank Cao</h4>
-                                    <p class="item-desc">Rank Cao Thủ, win rate 65%, full hero</p>
-                                    <div class="item-price">
-                                        <span class="price">7.000.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">TopPlayer</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/9370DB/FFFFFF?text=Acc+Skin+Rare" alt="Acc Skin Rare">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Acc Skin Rare</h4>
-                                    <p class="item-desc">Full skin hiếm, rank Kim Bạc, 300+ trận</p>
-                                    <div class="item-price">
-                                        <span class="price">4.500.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">SkinCollector</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/20B2AA/FFFFFF?text=Acc+Event" alt="Acc Event">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Acc Event</h4>
-                                    <p class="item-desc">Full item event, rank Bạch Kim, 200+ trận</p>
-                                    <div class="item-price">
-                                        <span class="price">3.000.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">EventHunter</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/DC143C/FFFFFF?text=Acc+Smurf" alt="Acc Smurf">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Acc Smurf</h4>
-                                    <p class="item-desc">Rank thấp, hero S+, win rate 80%</p>
-                                    <div class="item-price">
-                                        <span class="price">1.500.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">SmurfAccount</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/4682B4/FFFFFF?text=Acc+Full+Item" alt="Acc Full Item">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Acc Full Item</h4>
-                                    <p class="item-desc">Full item hiếm, rank Hoàng Kim, 400+ trận</p>
-                                    <div class="item-price">
-                                        <span class="price">6.000.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">ItemCollector</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/8B4513/FFFFFF?text=Acc+Beginner" alt="Acc Beginner">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Acc Beginner</h4>
-                                    <p class="item-desc">Mới tạo, full hero, rank chưa đấu</p>
-                                    <div class="item-price">
-                                        <span class="price">800.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">BeginnerShop</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
+                            <div class="feature-item">
+                                <i class="fas fa-users"></i>
+                                <span>Cộng đồng uy tín</span>
                             </div>
                         </div>
-
-                        <!-- Pagination -->
-                        <div class="pagination">
-                            <button class="page-btn active">1</button>
-                            <button class="page-btn">2</button>
-                            <button class="page-btn">3</button>
-                            <button class="page-btn">...</button>
-                            <button class="page-btn">10</button>
-                            <button class="page-btn next">Tiếp theo <i class="fas fa-chevron-right"></i></button>
-                        </div>
-                    </div>
-
-                    <!-- Acc Cũ Tab -->
-                    <div id="acc-old" class="tab-pane">
-                        <div class="items-grid">
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/8B4513/FFFFFF?text=Acc+Cũ+2019" alt="Acc Cũ 2019">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Acc Cũ 2019</h4>
-                                    <p class="item-desc">Từ năm 2019, rank Cao Thủ, full hero SS</p>
-                                    <div class="item-price">
-                                        <span class="price">8.000.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">OldAccount</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/708090/FFFFFF?text=Acc+Cũ+2020" alt="Acc Cũ 2020">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Acc Cũ 2020</h4>
-                                    <p class="item-desc">Từ năm 2020, rank Đại Cao Thủ, 1000+ trận</p>
-                                    <div class="item-price">
-                                        <span class="price">6.500.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">VeteranPlayer</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/2F4F4F/FFFFFF?text=Acc+Huyền+Thoại" alt="Acc Huyền Thoại">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Acc Huyền Thoại</h4>
-                                    <p class="item-desc">Từ 2018, rank Thách Đấu, full skin huyền thoại</p>
-                                    <div class="item-price">
-                                        <span class="price">15.000.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">LegendarySeller</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/800000/FFFFFF?text=Acc+Old+VIP" alt="Acc Old VIP">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Acc Old VIP</h4>
-                                    <p class="item-desc">Từ 2019, VIP trọn đời, rank Cao Thủ</p>
-                                    <div class="item-price">
-                                        <span class="price">12.000.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">VIPForever</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/483D8B/FFFFFF?text=Acc+Nhiều+Skin" alt="Acc Nhiều Skin">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Acc Nhiều Skin</h4>
-                                    <p class="item-desc">Từ 2020, 200+ skin, rank Hoàng Kim</p>
-                                    <div class="item-price">
-                                        <span class="price">7.500.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">SkinKing</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/556B2F/FFFFFF?text=Acc+Old+Event" alt="Acc Old Event">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Acc Old Event</h4>
-                                    <p class="item-desc">Từ 2019, full item event cũ, rank Bạch Kim</p>
-                                    <div class="item-price">
-                                        <span class="price">5.500.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">EventOld</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/8B0000/FFFFFF?text=Acc+Rank+Pro" alt="Acc Rank Pro">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Acc Rank Pro</h4>
-                                    <p class="item-desc">Từ 2020, rank Thách Đấu, win rate 70%</p>
-                                    <div class="item-price">
-                                        <span class="price">10.000.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">ProGamer</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/4B0082/FFFFFF?text=Acc+Old+Collector" alt="Acc Old Collector">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Acc Old Collector</h4>
-                                    <p class="item-desc">Từ 2018, full item hiếm, rank Kim Cương</p>
-                                    <div class="item-price">
-                                        <span class="price">9.000.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">CollectorPro</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x0000/FFFFFF?text=Acc+Old+Safe" alt="Acc Old Safe">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Acc Old Safe</h4>
-                                    <p class="item-desc">Từ 2019, info đầy đủ, rank Bạch Kim</p>
-                                    <div class="item-price">
-                                        <span class="price">4.500.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">SafeSeller</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pagination -->
-                        <div class="pagination">
-                            <button class="page-btn active">1</button>
-                            <button class="page-btn">2</button>
-                            <button class="page-btn">3</button>
-                            <button class="page-btn">...</button>
-                            <button class="page-btn">8</button>
-                            <button class="page-btn next">Tiếp theo <i class="fas fa-chevron-right"></i></button>
-                        </div>
-                    </div>
-
-                    <!-- Trang Bị Tab -->
-                    <div id="trang-bi" class="tab-pane">
-                        <div class="items-grid">
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/800080/FFFFFF?text=Giáp" alt="Giáp">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Áo Giáp Long Lân</h4>
-                                    <p class="item-desc">Phòng thủ 1500, +20% khống chế</p>
-                                    <div class="item-price">
-                                        <span class="price">1.800.000</span>
-                                        <span class="currency">Kim Nguyên Bảo</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">TruongWuji</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/696969/FFFFFF?text=Mũ" alt="Mũ">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Mũ Kim Cương</h4>
-                                    <p class="item-desc">Phòng thủ 800, +15% né tránh</p>
-                                    <div class="item-price">
-                                        <span class="price">1.200.000</span>
-                                        <span class="currency">Kim Nguyên Bảo</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">HuaTuo</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/8B4513/FFFFFF?text=Giày" alt="Giày">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Giày Thần Hành</h4>
-                                    <p class="item-desc">Phòng thủ 600, +30% tốc độ di chuyển</p>
-                                    <div class="item-price">
-                                        <span class="price">900.000</span>
-                                        <span class="currency">Kim Nguyên Bảo</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">TieuFeng</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/4682B4/FFFFFF?text=Nhẫn" alt="Nhẫn">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Nhẫn Quyền Lực</h4>
-                                    <p class="item-desc">Tăng 300 nội công, +10% tốc độ hồi phục</p>
-                                    <div class="item-price">
-                                        <span class="price">1.500.000</span>
-                                        <span class="currency">Kim Nguyên Bảo</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">WeiXiaobao</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/DC143C/FFFFFF?text=Lắc" alt="Lắc">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Lắc Tay Bảo Hộ</h4>
-                                    <p class="item-desc">Phòng thủ 400, +20% kháng phép</p>
-                                    <div class="item-price">
-                                        <span class="price">1.100.000</span>
-                                        <span class="currency">Kim Nguyên Bảo</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">Azi</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/FF8C00/FFFFFF?text=Ngọc" alt="Ngọc">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Ngọc Bội Thần</h4>
-                                    <p class="item-desc">Tăng 500 nội công, +15% chí mạng</p>
-                                    <div class="item-price">
-                                        <span class="price">1.700.000</span>
-                                        <span class="currency">Kim Nguyên Bảo</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">LinghuChong</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/9370DB/FFFFFF?text=Yếm" alt="Yếm">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Yếm Lụa Thần</h4>
-                                    <p class="item-desc">Phòng thủ 700, +25% né tránh</p>
-                                    <div class="item-price">
-                                        <span class="price">1.300.000</span>
-                                        <span class="currency">Kim Nguyên Bảo</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">XiaoLongNuu</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/20B2AA/FFFFFF?text=Đai" alt="Đai">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Đai Lưng Võ Sĩ</h4>
-                                    <p class="item-desc">Phòng thủ 500, +10% sức mạnh</p>
-                                    <div class="item-price">
-                                        <span class="price">800.000</span>
-                                        <span class="currency">Kim Nguyên Bảo</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">QuanFeng</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/2F4F4F/FFFFFF?text=Bộ" alt="Bộ">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Bộ Giáp Hoàn Mỹ</h4>
-                                    <p class="item-desc">Phòng thủ 2000, +30% tất cả chỉ số</p>
-                                    <div class="item-price">
-                                        <span class="price">5.000.000</span>
-                                        <span class="currency">Kim Nguyên Bảo</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">HuaSonAdmin</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pagination -->
-                        <div class="pagination">
-                            <button class="page-btn active">1</button>
-                            <button class="page-btn">2</button>
-                            <button class="page-btn">3</button>
-                            <button class="page-btn">...</button>
-                            <button class="page-btn">7</button>
-                            <button class="page-btn next">Tiếp theo <i class="fas fa-chevron-right"></i></button>
-                        </div>
-                    </div>
-
-                    <!-- Kim Nguyên Bảo Tab -->
-                    <div id="kim-nguyen" class="tab-pane">
-                        <div class="items-grid">
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/FFD700/FFFFFF?text=Kim+Nguyên" alt="Kim Nguyên Bảo">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Kim Nguyên Bảo</h4>
-                                    <p class="item-desc">Tệ tệ chính của game, dùng để giao dịch</p>
-                                    <div class="item-price">
-                                        <span class="price">1.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">HoaSonAdmin</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/C0C0C0/FFFFFF?text=Bạc+Nguyên" alt="Bạc Nguyên Bảo">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Bạc Nguyên Bảo</h4>
-                                    <p class="item-desc">Tệ tệ phụ, dùng để giao dịch nhỏ</p>
-                                    <div class="item-price">
-                                        <span class="price">100</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">HoaSonAdmin</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/CD7F32/FFFFFF?text=Đồng+Nguyên" alt="Đồng Nguyên Bảo">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Đồng Nguyên Bảo</h4>
-                                    <p class="item-desc">Tệ tệ nhỏ nhất, dùng để giao dịch thường ngày</p>
-                                    <div class="item-price">
-                                        <span class="price">10</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">HoaSonAdmin</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/FFD700/FFFFFF?text=Gói+Kim+Nguyên" alt="Gói Kim Nguyên Bảo">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Gói Kim Nguyên Bảo (1000)</h4>
-                                    <p class="item-desc">Gói 1000 Kim Nguyên Bảo với giá ưu đãi</p>
-                                    <div class="item-price">
-                                        <span class="price">900.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">HoaSonAdmin</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/FFD700/FFFFFF?text=Gói+Kim+Nguyên+5k" alt="Gói Kim Nguyên Bảo 5000">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Gói Kim Nguyên Bảo (5000)</h4>
-                                    <p class="item-desc">Gói 5000 Kim Nguyên Bảo với giá ưu đãi</p>
-                                    <div class="item-price">
-                                        <span class="price">4.000.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">HoaSonAdmin</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/FFD700/FFFFFF?text=Gói+Kim+Nguyên+10k" alt="Gói Kim Nguyên Bảo 10000">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Gói Kim Nguyên Bảo (10000)</h4>
-                                    <p class="item-desc">Gói 10000 Kim Nguyên Bảo với giá ưu đãi</p>
-                                    <div class="item-price">
-                                        <span class="price">7.000.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">HoaSonAdmin</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/FFD700/FFFFFF?text=Gói+VIP" alt="Gói VIP">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Gói VIP 1 Tháng</h4>
-                                    <p class="item-desc">Nhận 500 Kim Nguyên Bảo mỗi ngày trong 30 ngày</p>
-                                    <div class="item-price">
-                                        <span class="price">1.200.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">HoaSonAdmin</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/FFD700/FFFFFF?text=Gói+VIP+Năm" alt="Gói VIP Năm">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Gói VIP 1 Năm</h4>
-                                    <p class="item-desc">Nhận 1000 Kim Nguyên Bảo mỗi ngày trong 365 ngày</p>
-                                    <div class="item-price">
-                                        <span class="price">10.000.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">HoaSonAdmin</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-
-                            <div class="item-card">
-                                <div class="item-image">
-                                    <img src="https://via.placeholder.com/200x200/FFD700/FFFFFF?text=Gói+Vô+Hạn" alt="Gói VIP Vô Hạn">
-                                </div>
-                                <div class="item-info">
-                                    <h4>Gói VIP Vô Hạn</h4>
-                                    <p class="item-desc">Nhận 2000 Kim Nguyên Bảo mỗi ngày vĩnh viễn</p>
-                                    <div class="item-price">
-                                        <span class="price">50.000.000</span>
-                                        <span class="currency">VNĐ</span>
-                                    </div>
-                                    <div class="item-seller">
-                                        <span>Người bán: </span>
-                                        <span class="seller-name">HoaSonAdmin</span>
-                                    </div>
-                                    <button class="btn-buy">Mua Ngay</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pagination -->
-                        <div class="pagination">
-                            <button class="page-btn active">1</button>
-                            <button class="page-btn">2</button>
-                            <button class="page-btn">3</button>
-                            <button class="page-btn">...</button>
-                            <button class="page-btn">5</button>
-                            <button class="page-btn next">Tiếp theo <i class="fas fa-chevron-right"></i></button>
+                        <div class="coming-soon-cta">
+                            <a href="https://discord.gg/42WP55wtGx" target="_blank" class="btn btn-primary">
+                                <i class="fab fa-discord"></i> Tham gia Discord để cập nhật
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -830,7 +110,7 @@
                     <h4>Liên Kết Nhanh</h4>
                     <ul>
                         <li><a href="index.html#gioi-thieu">Giới Thiệu</a></li>
-                        <li><a href="mua-ban.html">Mua Bán</a></li>
+                        <li><a href="mua-ban-new.html">Mua Bán</a></li>
                         <li><a href="index.html#tin-tuc">Tin Tức</a></li>
                         <li><a href="index.html#lien-he">Liên Hệ</a></li>
                     </ul>
@@ -848,11 +128,128 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2023 Bang Hoa Sơn. Tất cả quyền được bảo lưu.</p>
+                <p>&copy; <span id="current-year"></span> Bang Hoa Sơn. Tất cả quyền được bảo lưu.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Cập nhật năm hiện tại
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+    <style>
+        .coming-soon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 60vh;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .coming-soon-content {
+            max-width: 800px;
+            background-color: #111111;
+            border-radius: 15px;
+            padding: 50px 40px;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
+            border: 1px solid #333333;
+        }
+
+        .coming-soon-icon {
+            font-size: 4rem;
+            color: #FFD700;
+            margin-bottom: 30px;
+            animation: pulse 2s infinite;
+        }
+
+        .coming-soon-title {
+            font-family: 'Great Vibes', 'Dancing Script', 'Alex Brush', cursive;
+            font-size: 3.5rem;
+            color: #FFD700;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .coming-soon-description {
+            font-size: 1.2rem;
+            color: #FFA500;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+
+        .coming-soon-features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .feature-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            color: #FFA500;
+        }
+
+        .feature-item i {
+            font-size: 2rem;
+            color: #FFD700;
+        }
+
+        .feature-item span {
+            font-size: 1rem;
+        }
+
+        .coming-soon-cta {
+            margin-top: 20px;
+        }
+
+        .coming-soon-cta .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .coming-soon-content {
+                padding: 30px 20px;
+            }
+
+            .coming-soon-title {
+                font-size: 2.5rem;
+            }
+
+            .coming-soon-features {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .coming-soon-description {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
 </body>
+
 </html>
