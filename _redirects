@@ -1,2 +1,4 @@
 # Redirect root to index.html
 /    /index.html   200
+# Redirect without trailing slash
+https://hoason10.com    /index.html   200
