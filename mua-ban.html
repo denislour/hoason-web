@@ -154,6 +154,34 @@
     <script>
         // Cập nhật năm hiện tại
         document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Cập nhật Open Graph URL động
+        const currentUrl = window.location.href;
+        // Chuẩn hóa URL - loại bỏ dấu / ở cuối nếu có
+        const normalizedUrl = currentUrl.endsWith('/') ? currentUrl.slice(0, -1) : currentUrl;
+
+        // Cập nhật canonical URL
+        let canonicalLink = document.querySelector('link[rel="canonical"]');
+        if (!canonicalLink) {
+            canonicalLink = document.createElement('link');
+            canonicalLink.rel = 'canonical';
+            document.head.appendChild(canonicalLink);
+        }
+        canonicalLink.href = normalizedUrl;
+
+        // Cập nhật OG tags
+        const ogUrlTags = document.querySelectorAll('meta[property="og:url"], meta[property="og:image"], meta[name="twitter:image"]');
+        ogUrlTags.forEach(tag => {
+            if (tag.getAttribute('property') === 'og:url') {
+                tag.setAttribute('content', normalizedUrl);
+            } else if (tag.getAttribute('property') === 'og:image' || tag.getAttribute('name') === 'twitter:image') {
+                // Lấy domain từ URL hiện tại để xây dựng URL ảnh
+                const urlParts = normalizedUrl.split('/');
+                const domain = urlParts[0] + '//' + urlParts[2];
+                const imageUrl = domain + '/img/thumbnail.png';
+                tag.setAttribute('content', imageUrl);
+            }
+        });
     </script>
 
     <style>

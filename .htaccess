@@ -1,0 +1,14 @@
+# Đảm bảo URL không có dấu / ở cuối chuyển hướng đến URL không có dấu /
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [L,R=301]
+
+# Xử lý cho trang chủ - đảm bảo cả có và không có dấu / đều hoạt động
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^(.*)$ index.html [L]
+
+# Đặt canonical header để giúp các mạng xã hội hiểu đúng URL
+<IfModule mod_headers.c>
+    Header set Link '<https://hoason10.com%{REQUEST_URI}>; rel="canonical"'
+</IfModule>
