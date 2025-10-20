@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://hoason10.com/sitemap.xml
+
+# Canonical URL cho trang chủ
+Host: https://hoason10.com
