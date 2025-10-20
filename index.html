@@ -22,6 +22,12 @@
     <meta name="twitter:description" content="Đánh trung lập cho nó chọn phe! Gia nhập bang Hoa Sơn để cùng anh em đoàn kết, cắn đàn và gây rối trong thế giới võ hiệp!">
     <meta name="twitter:image" content="https://hoason10.com/img/thumbnail.png">
 
+    <!-- Zalo Meta Tags -->
+    <meta property="zalo:share_url" content="https://hoason10.com">
+    <meta property="zalo:share_title" content="Bang Hoa Sơn - Nghịch Thủy Hàn - S1">
+    <meta property="zalo:share_description" content="Đánh trung lập cho nó chọn phe! Gia nhập bang Hoa Sơn để cùng anh em đoàn kết, cắn đàn và gây rối trong thế giới võ hiệp!">
+    <meta property="zalo:share_image" content="https://hoason10.com/img/thumbnail.png">
+
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
     <link rel="stylesheet" href="styles.css">
@@ -389,6 +395,17 @@
                 if (tag.getAttribute('property') === 'og:url') {
                     tag.setAttribute('content', normalizedUrl);
                 } else if (tag.getAttribute('property') === 'og:image' || tag.getAttribute('name') === 'twitter:image') {
+                    const imageUrl = normalizedUrl + '/img/thumbnail.png';
+                    tag.setAttribute('content', imageUrl);
+                }
+            });
+
+            // Cập nhật Zalo tags
+            const zaloUrlTags = document.querySelectorAll('meta[property="zalo:share_url"], meta[property="zalo:share_image"]');
+            zaloUrlTags.forEach(tag => {
+                if (tag.getAttribute('property') === 'zalo:share_url') {
+                    tag.setAttribute('content', normalizedUrl);
+                } else if (tag.getAttribute('property') === 'zalo:share_image') {
                     const imageUrl = normalizedUrl + '/img/thumbnail.png';
                     tag.setAttribute('content', imageUrl);
                 }
