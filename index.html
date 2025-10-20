@@ -9,10 +9,10 @@
     <!-- Open Graph Meta Tags for Facebook -->
     <meta property="og:title" content="Bang Hoa Sơn - Nghịch Thủy Hàn - S1">
     <meta property="og:description" content="Đánh trung lập cho nó chọn phe! Gia nhập bang Hoa Sơn để cùng anh em đoàn kết, cắn đàn và gây rối trong thế giới võ hiệp!">
-    <meta property="og:image" content="img/thumbnail.png">
+    <meta property="og:image" content="https://hoason10.com/img/thumbnail.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="https://hoason10.com/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Bang Hoa Sơn">
 
@@ -20,7 +20,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Bang Hoa Sơn - Nghịch Thủy Hàn - S1">
     <meta name="twitter:description" content="Đánh trung lập cho nó chọn phe! Gia nhập bang Hoa Sơn để cùng anh em đoàn kết, cắn đàn và gây rối trong thế giới võ hiệp!">
-    <meta name="twitter:image" content="img/thumbnail.png">
+    <meta name="twitter:image" content="https://hoason10.com/img/thumbnail.png">
 
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
@@ -368,6 +368,18 @@
         <script>
             // Cập nhật năm hiện tại
             document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // Cập nhật Open Graph URL động
+            const currentUrl = window.location.href;
+            const ogUrlTags = document.querySelectorAll('meta[property="og:url"], meta[property="og:image"], meta[name="twitter:image"]');
+            ogUrlTags.forEach(tag => {
+                if (tag.getAttribute('property') === 'og:url') {
+                    tag.setAttribute('content', currentUrl);
+                } else if (tag.getAttribute('property') === 'og:image' || tag.getAttribute('name') === 'twitter:image') {
+                    const imageUrl = currentUrl.endsWith('/') ? currentUrl + 'img/thumbnail.png' : currentUrl + '/img/thumbnail.png';
+                    tag.setAttribute('content', imageUrl);
+                }
+            });
         </script>
 </body>
 
