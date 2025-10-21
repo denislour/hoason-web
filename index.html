@@ -8,7 +8,8 @@
 
     <!-- Open Graph Meta Tags for Facebook -->
     <meta property="og:title" content="Bang Hoa Sơn - Nghịch Thủy Hàn - S1">
-    <meta property="og:description" content="Đánh trung lập cho nó chọn phe! Gia nhập bang Hoa Sơn để cùng anh em đoàn kết, cắn đàn và gây rối trong thế giới võ hiệp!">
+    <meta property="og:description"
+        content="Đánh trung lập cho nó chọn phe! Gia nhập bang Hoa Sơn để cùng anh em đoàn kết, cắn đàn và gây rối trong thế giới võ hiệp!">
     <meta property="og:image" content="https://hoason10.com/img/thumbnail.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -19,13 +20,15 @@
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Bang Hoa Sơn - Nghịch Thủy Hàn - S1">
-    <meta name="twitter:description" content="Đánh trung lập cho nó chọn phe! Gia nhập bang Hoa Sơn để cùng anh em đoàn kết, cắn đàn và gây rối trong thế giới võ hiệp!">
+    <meta name="twitter:description"
+        content="Đánh trung lập cho nó chọn phe! Gia nhập bang Hoa Sơn để cùng anh em đoàn kết, cắn đàn và gây rối trong thế giới võ hiệp!">
     <meta name="twitter:image" content="https://hoason10.com/img/thumbnail.png">
 
     <!-- Zalo Meta Tags -->
     <meta property="zalo:share_url" content="https://hoason10.com">
     <meta property="zalo:share_title" content="Bang Hoa Sơn - Nghịch Thủy Hàn - S1">
-    <meta property="zalo:share_description" content="Đánh trung lập cho nó chọn phe! Gia nhập bang Hoa Sơn để cùng anh em đoàn kết, cắn đàn và gây rối trong thế giới võ hiệp!">
+    <meta property="zalo:share_description"
+        content="Đánh trung lập cho nó chọn phe! Gia nhập bang Hoa Sơn để cùng anh em đoàn kết, cắn đàn và gây rối trong thế giới võ hiệp!">
     <meta property="zalo:share_image" content="https://hoason10.com/img/thumbnail.png">
 
     <link rel="icon"
@@ -81,6 +84,11 @@
                         <a href="#play-duo" class="btn btn-primary">Play Duo</a>
                         <a href="#fan-service" class="btn btn-secondary">Fan Service</a>
                         <a href="https://discord.gg/42WP55wtGx" target="_blank" class="btn btn-secondary">Discord</a>
+                    </div>
+                    <div class="heo-game-container">
+                        <p id="heo-instruction">Nhập "heo" để pé heo xuất hiện</p>
+                        <input type="text" id="heo-input" placeholder="Nhập chữ cái viết thường" maxlength="10">
+                        <div id="heo-image-container"></div>
                     </div>
                 </div>
             </div>
@@ -410,6 +418,47 @@
                     const imageUrl = normalizedUrl + '/img/thumbnail.png';
                     tag.setAttribute('content', imageUrl);
                 }
+            });
+
+            // Game Pé Heo
+            document.addEventListener('DOMContentLoaded', function () {
+                const heoInput = document.getElementById('heo-input');
+                const heoInstruction = document.getElementById('heo-instruction');
+                const heoImageContainer = document.getElementById('heo-image-container');
+                let currentStage = 0; // 0: chưa có gì, 1: heo, 2: haha
+
+                heoInput.addEventListener('input', function () {
+                    // Chỉ cho phép chữ cái và tự động chuyển thành viết thường
+                    this.value = this.value.replace(/[^a-zA-Z]/g, '').toLowerCase();
+
+                    if (this.value === 'heo' && currentStage === 0) {
+                        // Hiển thị hình heo đeo mặt nạ
+                        heoImageContainer.innerHTML = '<img src="img/ppgm.png" alt="Pé Heo" style="max-width: 200px; border-radius: 10px; margin-top: 10px; display: block;">';
+                        heoInstruction.textContent = 'Nhập "haha" pé heo sẽ tháo mặt nạ ra';
+                        currentStage = 1;
+                        // Xóa input sau khi nhập "heo"
+                        this.value = '';
+                    } else if (this.value === 'haha' && currentStage === 1) {
+                        // Hiển thị hình heo không đeo mặt nạ
+                        heoImageContainer.innerHTML = '<img src="img/ppg.png" alt="Pé Heo" style="max-width: 200px; border-radius: 10px; margin-top: 10px; display: block;">';
+                        heoInstruction.textContent = 'Pé heo đã tháo mặt nạ! 🎉';
+                        currentStage = 2;
+                        // Xóa input sau khi nhập "haha"
+                        this.value = '';
+                    } else if (this.value === '' && currentStage === 0) {
+                        // Ẩn hình khi input trống ở stage ban đầu
+                        heoImageContainer.innerHTML = '';
+                    } else if (this.value !== 'heo' && this.value !== 'haha' && currentStage === 0) {
+                        // Ẩn hình khi nhập sai ở stage ban đầu
+                        heoImageContainer.innerHTML = '';
+                    } else if (this.value.length > 0 && currentStage === 2) {
+                        // Reset khi người dùng nhập gì đó sau khi hoàn thành
+                        heoImageContainer.innerHTML = '';
+                        heoInstruction.textContent = 'Nhập "heo" để pé heo xuất hiện';
+                        currentStage = 0;
+                        this.value = '';
+                    }
+                });
             });
         </script>
 </body>

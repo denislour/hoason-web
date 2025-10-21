@@ -1364,3 +1364,88 @@ body.mua-ban-page .hero {
         grid-template-columns: 1fr;
     }
 }
+
+/* Pé Heo Game Styles */
+.heo-game-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 215, 0, 0.1);
+    border: 2px solid #FFD700;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s ease;
+}
+
+.heo-game-container:hover {
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+#heo-instruction {
+    font-size: 1.2rem;
+    color: #FFD700;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-family: 'Be Vietnam Pro', 'Noto Serif', serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#heo-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #FFA500;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFD700;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    font-family: 'Be Vietnam Pro', 'Noto Serif', serif;
+}
+
+#heo-input:focus {
+    outline: none;
+    border-color: #FFD700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#heo-input::placeholder {
+    color: #888888;
+}
+
+#heo-image-container {
+    margin-top: 15px;
+    min-height: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#heo-image-container:not(:empty) {
+    display: flex;
+    min-height: 200px;
+}
+
+#heo-image-container img {
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
