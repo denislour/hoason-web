@@ -1,0 +1,61 @@
+# Netlify configuration file
+
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+  [headers.values]
+    # Multi-value headers are expressed with multi-line strings.
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[redirects]]
+  # Loại bỏ fbclid
+  from = "/"
+  to = "/"
+  status = 301
+  query = {fbclid = "*"}
+
+[[redirects]]
+  # Loại bỏ fbclid từ tất cả các trang khác
+  from = "/*"
+  to = "/:splat"
+  status = 301
+  query = {fbclid = "*"}
+
+[[redirects]]
+  # Loại bỏ các tham số tracking khác
+  from = "/*"
+  to = "/:splat"
+  status = 301
+  query = {fbcid = "*"}
+
+[[redirects]]
+  from = "/*"
+  to = "/:splat"
+  status = 301
+  query = {fb_source = "*"}
+
+[[redirects]]
+  from = "/*"
+  to = "/:splat"
+  status = 301
+  query = {fb_action_ids = "*"}
+
+[[redirects]]
+  from = "/*"
+  to = "/:splat"
+  status = 301
+  query = {fb_action_types = "*"}
+
+[[edge_functions]]
+  function = "block-bots"
+  path = "/*"
+
+[[redirects]]
+  # Redirect cho SPA (phải để cuối cùng)
+  from = "/*"
+  to = "/index.html"
+  status = 200

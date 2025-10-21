@@ -376,7 +376,8 @@
             document.getElementById('current-year').textContent = new Date().getFullYear();
 
             // Cập nhật Open Graph URL động
-            const currentUrl = window.location.href;
+            let currentUrl = window.location.href;
+
             // Chuẩn hóa URL - loại bỏ dấu / ở cuối nếu có
             const normalizedUrl = currentUrl.endsWith('/') ? currentUrl.slice(0, -1) : currentUrl;
 
