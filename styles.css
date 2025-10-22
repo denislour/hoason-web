@@ -191,8 +191,14 @@ p, .contact-item p, .news-excerpt {
     padding: 15px 20px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .logo img {
-    height: 60px;
+    height: 80px;
     width: auto;
     display: block;
     transition: transform 0.3s ease;
@@ -200,6 +206,11 @@ p, .contact-item p, .news-excerpt {
 
 .logo img:hover {
     transform: scale(1.05);
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
 }
 
 .logo h1 {
@@ -1116,7 +1127,11 @@ body.mua-ban-page .hero {
     }
 
     .logo img {
-        height: 45px;
+        height: 50px;
+    }
+
+    .logo {
+        gap: 10px;
     }
 }
 
