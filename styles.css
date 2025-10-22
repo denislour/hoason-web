@@ -283,7 +283,7 @@ p, .contact-item p, .news-excerpt {
     position: relative;
     background-size: cover;
     background-position: center;
-    transition: background-image 1s ease-in-out;
+    transition: background-image 1s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 /* Hero Section cho trang mua-ban */

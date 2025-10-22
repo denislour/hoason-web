@@ -5,6 +5,48 @@ document.addEventListener('DOMContentLoaded', function() {
     if (heroSection && !document.body.classList.contains('mua-ban-page')) {
         const gifFiles = ['0.gif', '1.gif', '2.gif', '3.gif'];
         let currentGifIndex = 0;
+        let preloadedImages = [];
+        let loadedCount = 0;
+        
+        // Show loading indicator
+        heroSection.style.opacity = '0.5';
+        const loadingText = document.createElement('div');
+        loadingText.style.cssText = 'position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #FFD700; font-size: 1.5rem; font-weight: bold; z-index: 10; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);';
+        loadingText.textContent = 'Đang tải... 0%';
+        heroSection.appendChild(loadingText);
+        
+        // Preload all GIFs
+        function preloadGifs() {
+            gifFiles.forEach((gifFile, index) => {
+                const img = new Image();
+                img.onload = function() {
+                    loadedCount++;
+                    const percentage = Math.round((loadedCount / gifFiles.length) * 100);
+                    loadingText.textContent = `Đang tải... ${percentage}%`;
+                    
+                    // All images loaded
+                    if (loadedCount === gifFiles.length) {
+                        setTimeout(() => {
+                            heroSection.style.opacity = '1';
+                            heroSection.removeChild(loadingText);
+                            // Start rotation
+                            setInterval(rotateBackground, 1500);
+                        }, 300);
+                    }
+                };
+                img.onerror = function() {
+                    console.error(`Failed to load: ${gifFile}`);
+                    loadedCount++;
+                    if (loadedCount === gifFiles.length) {
+                        heroSection.style.opacity = '1';
+                        heroSection.removeChild(loadingText);
+                        setInterval(rotateBackground, 1500);
+                    }
+                };
+                img.src = `static/gif/${gifFile}`;
+                preloadedImages.push(img);
+            });
+        }
         
         function rotateBackground() {
             currentGifIndex = (currentGifIndex + 1) % gifFiles.length;
@@ -12,8 +54,8 @@ document.addEventListener('DOMContentLoaded', function() {
             heroSection.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('${gifPath}')`;
         }
         
-        // Rotate background every 5 seconds
-        setInterval(rotateBackground, 1500);
+        // Start preloading
+        preloadGifs();
     }
 
     // Mobile menu toggle
