@@ -198,7 +198,7 @@ p, .contact-item p, .news-excerpt {
 }
 
 .logo img {
-    height: 80px;
+    height: 100px;
     width: auto;
     display: block;
     transition: transform 0.3s ease;
@@ -1131,7 +1131,7 @@ body.mua-ban-page .hero {
     }
 
     .logo img {
-        height: 50px;
+        height: 60px;
     }
 
     .logo {
