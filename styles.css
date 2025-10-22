@@ -191,6 +191,17 @@ p, .contact-item p, .news-excerpt {
     padding: 15px 20px;
 }
 
+.logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
 .logo h1 {
     font-size: 2rem;
     color: #FFD700; /* Màu vàng */
@@ -1102,6 +1113,10 @@ body.mua-ban-page .hero {
 
     .logo h1 {
         font-size: 1.5rem;
+    }
+
+    .logo img {
+        height: 45px;
     }
 }
 
