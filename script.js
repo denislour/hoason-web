@@ -1,5 +1,21 @@
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // Rotating background GIFs for hero section
+    const heroSection = document.querySelector('.hero');
+    if (heroSection && !document.body.classList.contains('mua-ban-page')) {
+        const gifFiles = ['0.gif', '1.gif', '2.gif', '3.gif'];
+        let currentGifIndex = 0;
+        
+        function rotateBackground() {
+            currentGifIndex = (currentGifIndex + 1) % gifFiles.length;
+            const gifPath = `static/gif/${gifFiles[currentGifIndex]}`;
+            heroSection.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('${gifPath}')`;
+        }
+        
+        // Rotate background every 5 seconds
+        setInterval(rotateBackground, 1500);
+    }
+
     // Mobile menu toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const mainNav = document.querySelector('.main-nav');
