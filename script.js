@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const gifFiles = [
             'https://cdn.discordapp.com/attachments/1032368922181238885/1430579139009843220/0.gif?ex=68fa4a25&is=68f8f8a5&hm=f02805ed84262778c3a0c55ee5d066ec35a9efab32d7bb86ab419da3cf404bf3&',
             'https://cdn.discordapp.com/attachments/1032368922181238885/1430579139341189252/1.gif?ex=68fa4a25&is=68f8f8a5&hm=f4bc2aa32dfc57fae4bf5e751f4f05380c0899085170553f5bc8df49bcb2b3cf&',
-            // 'https://cdn.discordapp.com/attachments/1032368922181238885/1430579139760623807/2.gif?ex=68fa4a25&is=68f8f8a5&hm=128f84d688a0fb3d52ea4213b5f764fd8c94c46134ebec10f34e5aae810cb4ac&',
-            // 'https://cdn.discordapp.com/attachments/1032368922181238885/1430579140209152040/3.gif?ex=68fa4a25&is=68f8f8a5&hm=61d47ae52a098d47815dc29fbd77709126f844b2faede239b0657e5a3bc5913f&'
+            'https://cdn.discordapp.com/attachments/1032368922181238885/1430579139760623807/2.gif?ex=68fa4a25&is=68f8f8a5&hm=128f84d688a0fb3d52ea4213b5f764fd8c94c46134ebec10f34e5aae810cb4ac&',
+            'https://cdn.discordapp.com/attachments/1032368922181238885/1430579140209152040/3.gif?ex=68fa4a25&is=68f8f8a5&hm=61d47ae52a098d47815dc29fbd77709126f844b2faede239b0657e5a3bc5913f&'
         ];
         let currentGifIndex = 0;
         let preloadedImages = [];
