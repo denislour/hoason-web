@@ -34,20 +34,20 @@ p, span, div, a, button, input, textarea {
 /* Font đặc biệt cho logo và các phần cần phong cách thư pháp */
 .logo h1, .section-title {
     font-family: 'Great Vibes', 'Dancing Script', 'Alex Brush', cursive;
-    font-weight: 700;
-    font-size: 1.1em; /* Tăng kích thước một chút cho font thư pháp */
+    font-weight: 820;
+    font-size: 1.3em; /* Tăng kích thước một chút cho font thư pháp */
 }
 
 /* Hero section sử dụng font thư pháp */
 .hero-content h2 {
     font-family: 'Great Vibes', 'Dancing Script', 'Alex Brush', cursive;
-    font-weight: 700;
+    font-weight: 820;
     color: #FFD700; /* Màu vàng cho tiêu đề chính */
 }
 
 .logo span, .hero-content p {
     font-family: 'Great Vibes', 'Dancing Script', 'Alex Brush', cursive;
-    font-weight: 700;
+    font-weight: 820;
     color: #FFA500; /* Màu cam cho hero section */
 }
 
