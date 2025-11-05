@@ -7,74 +7,88 @@
 
 /* Base Styles */
 body {
-    font-family: 'Be Vietnam Pro', 'Noto Serif', serif;
+    font-family: "Be Vietnam Pro", "Noto Serif", serif;
     line-height: 1.6;
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
     background-color: #000000; /* Nền đen */
 }
 
 /* Font thư pháp cho tiêu đề - sử dụng font thư pháp thực sự có hỗ trợ Unicode tốt */
-h1, h2, h4, h5, h6 {
-    font-family: 'Dancing Script', 'ZCOOL XiaoWei', 'Kalam', cursive;
+h1,
+h2,
+h4,
+h5,
+h6 {
+    font-family: "Dancing Script", "ZCOOL XiaoWei", "Kalam", cursive;
     font-weight: 700;
     letter-spacing: 1px; /* Tăng khoảng cách chữ cho dễ đọc hơn */
 }
 
 h3 {
-    font-family: 'Great Vibes', 'Dancing Script', 'Alex Brush', cursive;
+    font-family: "Great Vibes", "Dancing Script", "Alex Brush", cursive;
     font-weight: 700;
     letter-spacing: 1px; /* Tăng khoảng cách chữ cho dễ đọc hơn */
 }
 
 /* Font cho nội dung văn bản */
-p, span, div, a, button, input, textarea {
-    font-family: 'Be Vietnam Pro', 'Noto Serif', serif;
+p,
+span,
+div,
+a,
+button,
+input,
+textarea {
+    font-family: "Be Vietnam Pro", "Noto Serif", serif;
 }
 
 /* Font đặc biệt cho logo và các phần cần phong cách thư pháp */
-.logo h1, .section-title {
-    font-family: 'Great Vibes', 'Dancing Script', 'Alex Brush', cursive;
+.logo h1,
+.section-title {
+    font-family: "Great Vibes", "Dancing Script", "Alex Brush", cursive;
     font-weight: 820;
     font-size: 1.3em; /* Tăng kích thước một chút cho font thư pháp */
 }
 
 /* Hero section sử dụng font thư pháp */
 .hero-content h2 {
-    font-family: 'Great Vibes', 'Dancing Script', 'Alex Brush', cursive;
+    font-family: "Great Vibes", "Dancing Script", "Alex Brush", cursive;
     font-weight: 820;
-    color: #FFD700; /* Màu vàng cho tiêu đề chính */
+    color: #ffd700; /* Màu vàng cho tiêu đề chính */
 }
 
-.logo span, .hero-content p {
-    font-family: 'Great Vibes', 'Dancing Script', 'Alex Brush', cursive;
+.logo span,
+.hero-content p {
+    font-family: "Great Vibes", "Dancing Script", "Alex Brush", cursive;
     font-weight: 820;
-    color: #FFA500; /* Màu cam cho hero section */
+    color: #ffa500; /* Màu cam cho hero section */
 }
 
 /* Font cho các phần tử cần phong cách thư pháp nhẹ nhàng hơn */
-.item-info h4, .news-content h4 {
-    font-family: 'Satisfy', 'Pacifico', 'Lobster', cursive;
+.item-info h4,
+.news-content h4 {
+    font-family: "Satisfy", "Pacifico", "Lobster", cursive;
     font-weight: 500;
 }
 
 /* Font cho tiêu đề feature cards sử dụng font bình thường */
 .feature-card h4 {
-    font-family: 'Be Vietnam Pro', 'Noto Serif', serif;
+    font-family: "Be Vietnam Pro", "Noto Serif", serif;
     font-weight: 700;
 }
 
 /* Font cho các phần tử cần phong cách thư pháp Á Đông */
-.contact-info h3, .contact-form h3 {
-    font-family: 'ZCOOL XiaoWei', 'ZCOOL KuaiLe', serif;
+.contact-info h3,
+.contact-form h3 {
+    font-family: "ZCOOL XiaoWei", "ZCOOL KuaiLe", serif;
     font-weight: 700;
 }
 
 /* Font đặc biệt cho các tiêu đề trong phần giới thiệu */
 .gioi-thieu-text h3 {
-    font-family: 'Dancing Script', 'ZCOOL XiaoWei', 'Kalam', cursive;
+    font-family: "Dancing Script", "ZCOOL XiaoWei", "Kalam", cursive;
     font-weight: 700;
     font-size: 1.9rem; /* Tăng kích thước một chút */
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
     margin-bottom: 15px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     letter-spacing: 1px;
@@ -90,15 +104,15 @@ p, span, div, a, button, input, textarea {
     margin-bottom: 15px;
     padding-left: 35px;
     position: relative;
-    color: #FFA500; /* Vàng cam nhạt hơn */
+    color: #ffa500; /* Vàng cam nhạt hơn */
     font-size: 1.05rem; /* Tăng kích thước chữ một chút để dễ đọc */
 }
 
 .gioi-thieu-text ul li::before {
-    content: '🌸';
+    content: "🌸";
     position: absolute;
     left: 0;
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
     margin-right: 10px;
 }
 
@@ -106,7 +120,7 @@ p, span, div, a, button, input, textarea {
 .gioi-thieu-text blockquote {
     margin: 20px 0;
     padding: 15px 20px;
-    border-left: 4px solid #FFA500; /* Viền trái màu cam */
+    border-left: 4px solid #ffa500; /* Viền trái màu cam */
     background-color: rgba(255, 165, 0, 0.1); /* Nền cam mờ */
     border-radius: 0 5px 5px 0;
     font-style: italic;
@@ -114,9 +128,9 @@ p, span, div, a, button, input, textarea {
 
 .gioi-thieu-text blockquote p {
     margin-bottom: 10px;
-    color: #FFA500; /* Màu cam cho văn bản trong quote */
+    color: #ffa500; /* Màu cam cho văn bản trong quote */
     font-size: 1.1rem; /* Tăng kích thước chữ một chút */
-    font-family: 'Be Vietnam Pro', 'Noto Serif', serif; /* Font bình thường */
+    font-family: "Be Vietnam Pro", "Noto Serif", serif; /* Font bình thường */
     font-weight: 700;
 }
 
@@ -126,7 +140,7 @@ p, span, div, a, button, input, textarea {
 
 /* Style cho highlight trong phần giới thiệu */
 .gioi-thieu-text .highlight {
-    color: #FFD700; /* Màu vàng nổi bật */
+    color: #ffd700; /* Màu vàng nổi bật */
     font-weight: 700;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     background-color: rgba(255, 215, 0, 0.1); /* Nền vàng mờ */
@@ -135,8 +149,10 @@ p, span, div, a, button, input, textarea {
 }
 
 /* Tăng độ tương phản cho văn bản */
-p, .contact-item p, .news-excerpt {
-    color: #FFA500; /* Vàng cam nhạt hơn để dễ đọc */
+p,
+.contact-item p,
+.news-excerpt {
+    color: #ffa500; /* Vàng cam nhạt hơn để dễ đọc */
 }
 
 .container {
@@ -154,21 +170,21 @@ p, .contact-item p, .news-excerpt {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 50px;
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
     position: relative;
     padding-bottom: 15px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .section-title::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 80px;
     height: 3px;
-    background: linear-gradient(to right, #FFD700, #FFA500); /* Vàng đến cam */
+    background: linear-gradient(to right, #ffd700, #ffa500); /* Vàng đến cam */
 }
 
 /* Header Styles */
@@ -181,7 +197,7 @@ p, .contact-item p, .news-excerpt {
     width: 100%;
     z-index: 1000;
     transition: all 0.3s ease;
-    border-bottom: 1px solid #FFD700; /* Viền vàng */
+    border-bottom: 1px solid #ffd700; /* Viền vàng */
 }
 
 .header .container {
@@ -215,7 +231,7 @@ p, .contact-item p, .news-excerpt {
 
 .logo h1 {
     font-size: 2rem;
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
     margin-bottom: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -223,7 +239,7 @@ p, .contact-item p, .news-excerpt {
 .logo span {
     display: block;
     font-size: 0.9rem;
-    color: #FFA500; /* Vàng cam */
+    color: #ffa500; /* Vàng cam */
 }
 
 .main-nav ul {
@@ -237,26 +253,26 @@ p, .contact-item p, .news-excerpt {
 
 .main-nav ul li a {
     text-decoration: none;
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
 }
 
 .main-nav ul li a::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -5px;
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #FFA500; /* Vàng cam */
+    background-color: #ffa500; /* Vàng cam */
     transition: width 0.3s ease;
 }
 
 .main-nav ul li a:hover,
 .main-nav ul li a.active {
-    color: #FFA500; /* Vàng cam khi hover */
+    color: #ffa500; /* Vàng cam khi hover */
 }
 
 .main-nav ul li a:hover::after,
@@ -267,28 +283,34 @@ p, .contact-item p, .news-excerpt {
 .menu-toggle {
     display: none;
     font-size: 1.5rem;
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
     cursor: pointer;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('static/gif/0.gif') center/cover no-repeat;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+        url("static/gif/0.gif") center/cover no-repeat;
     height: 100vh;
     display: flex;
     align-items: center;
     text-align: center;
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
     padding-top: 80px;
     position: relative;
     background-size: cover;
     background-position: center;
-    transition: background-image 1s ease-in-out, opacity 0.5s ease-in-out;
+    transition:
+        background-image 1s ease-in-out,
+        opacity 0.5s ease-in-out;
 }
 
 /* Hero Section cho trang mua-ban */
 body.mua-ban-page .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('img/image2.png') center/cover no-repeat;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+        url("img/image2.png") center/cover no-repeat;
 }
 
 .hero-content h2 {
@@ -305,7 +327,7 @@ body.mua-ban-page .hero {
     margin: 0 auto 30px;
     animation: fadeInUp 1s ease;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-    color: #FFA500; /* Vàng cam để dễ đọc hơn */
+    color: #ffa500; /* Vàng cam để dễ đọc hơn */
 }
 
 .hero-subtitle {
@@ -318,7 +340,7 @@ body.mua-ban-page .hero {
     font-size: 1.1rem;
     max-width: 800px;
     margin: 0 auto;
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
 }
 
 .hero-buttons {
@@ -341,24 +363,24 @@ body.mua-ban-page .hero {
 }
 
 .btn-primary {
-    background-color: #FFD700; /* Nền vàng */
+    background-color: #ffd700; /* Nền vàng */
     color: #000000; /* Chữ đen */
-    border: 1px solid #FFA500;
+    border: 1px solid #ffa500;
 }
 
 .btn-primary:hover {
-    background-color: #FFA500; /* Vàng cam khi hover */
+    background-color: #ffa500; /* Vàng cam khi hover */
     transform: translateY(-3px);
 }
 
 .btn-secondary {
     background-color: transparent;
-    color: #FFD700; /* Chữ vàng */
-    border: 2px solid #FFD700; /* Viền vàng */
+    color: #ffd700; /* Chữ vàng */
+    border: 2px solid #ffd700; /* Viền vàng */
 }
 
 .btn-secondary:hover {
-    background-color: #FFD700; /* Nền vàng khi hover */
+    background-color: #ffd700; /* Nền vàng khi hover */
     color: #000000; /* Chữ đen khi hover */
 }
 
@@ -377,7 +399,7 @@ body.mua-ban-page .hero {
 
 .gioi-thieu-text h3 {
     font-size: 1.8rem;
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
     margin-bottom: 15px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     letter-spacing: 1px;
@@ -385,7 +407,7 @@ body.mua-ban-page .hero {
 
 .gioi-thieu-text p {
     margin-bottom: 25px;
-    color: #FFA500; /* Vàng cam nhạt hơn */
+    color: #ffa500; /* Vàng cam nhạt hơn */
     font-size: 1.05rem; /* Tăng kích thước chữ một chút để dễ đọc */
 }
 
@@ -412,7 +434,7 @@ body.mua-ban-page .hero {
 .tuyen-dung-left h3,
 .tuyen-dung-right h3 {
     font-size: 1.8rem;
-    color: #FFD700;
+    color: #ffd700;
     margin-bottom: 20px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -428,16 +450,16 @@ body.mua-ban-page .hero {
     margin-bottom: 15px;
     padding-left: 25px;
     position: relative;
-    color: #FFA500;
+    color: #ffa500;
     font-size: 1.05rem;
 }
 
 .tuyen-dung-left li::before,
 .tuyen-dung-right li::before {
-    content: '▶';
+    content: "▶";
     position: absolute;
     left: 0;
-    color: #FFD700;
+    color: #ffd700;
 }
 
 .tuyen-dung-left ol {
@@ -451,7 +473,7 @@ body.mua-ban-page .hero {
     margin-bottom: 15px;
     padding-left: 35px;
     position: relative;
-    color: #FFA500;
+    color: #ffa500;
     font-size: 1.05rem;
 }
 
@@ -462,7 +484,7 @@ body.mua-ban-page .hero {
     top: 5px; /* Di chuyển số xuống một chút so với nội dung */
     width: 25px;
     height: 25px;
-    background-color: #FFD700;
+    background-color: #ffd700;
     color: #000000;
     border-radius: 50%;
     display: flex;
@@ -478,13 +500,15 @@ body.mua-ban-page .hero {
     border-radius: 10px;
     padding: 25px;
     margin-top: 30px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .tuyen-dung-cta:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(255, 215, 0, 0.2);
-    border-color: #FFD700;
+    border-color: #ffd700;
 }
 
 .tuyen-dung-cta h3 {
@@ -493,12 +517,12 @@ body.mua-ban-page .hero {
 
 .tuyen-dung-cta p {
     margin-bottom: 20px;
-    color: #FFA500;
+    color: #ffa500;
 }
 
 .tuyen-dung-cta p:last-of-type {
     font-weight: bold;
-    color: #FFD700;
+    color: #ffd700;
 }
 
 .tuyen-dung-buttons {
@@ -523,30 +547,32 @@ body.mua-ban-page .hero {
     border-radius: 10px;
     background-color: #111111; /* Nền đen xám */
     border: 1px solid #333333; /* Viền xám đậm */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .feature-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(255, 215, 0, 0.2); /* Bóng vàng */
-    border-color: #FFD700; /* Viền vàng khi hover */
+    border-color: #ffd700; /* Viền vàng khi hover */
 }
 
 .feature-card i {
     font-size: 3rem;
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
     margin-bottom: 20px;
 }
 
 .feature-card h4 {
     font-size: 1.3rem;
     margin-bottom: 15px;
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
     letter-spacing: 1px;
 }
 
 .feature-card p {
-    color: #FFA500; /* Vàng cam */
+    color: #ffa500; /* Vàng cam */
     font-size: 1.05rem; /* Tăng kích thước chữ một chút để dễ đọc */
 }
 
@@ -571,14 +597,14 @@ body.mua-ban-page .hero {
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 500;
-    color: #FFD700; /* Chữ vàng */
+    color: #ffd700; /* Chữ vàng */
 }
 
 .tab-btn.active,
 .tab-btn:hover {
-    background-color: #FFD700; /* Nền vàng */
+    background-color: #ffd700; /* Nền vàng */
     color: #000000; /* Chữ đen */
-    border-color: #FFA500; /* Viền vàng cam */
+    border-color: #ffa500; /* Viền vàng cam */
 }
 
 .tab-content {
@@ -607,14 +633,16 @@ body.mua-ban-page .hero {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
     border: 1px solid #444444; /* Viền xám */
 }
 
 .item-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(255, 215, 0, 0.2); /* Bóng vàng */
-    border-color: #FFD700; /* Viền vàng khi hover */
+    border-color: #ffd700; /* Viền vàng khi hover */
 }
 
 .item-image {
@@ -640,13 +668,13 @@ body.mua-ban-page .hero {
 .item-info h4 {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
     letter-spacing: 1px;
 }
 
 .item-desc {
     font-size: 0.95rem; /* Tăng kích thước chữ một chút */
-    color: #FFA500; /* Vàng cam */
+    color: #ffa500; /* Vàng cam */
     margin-bottom: 15px;
 }
 
@@ -659,30 +687,30 @@ body.mua-ban-page .hero {
 .price {
     font-size: 1.3rem;
     font-weight: 700;
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
 }
 
 .currency {
     font-size: 0.9rem;
-    color: #FFA500; /* Vàng cam */
+    color: #ffa500; /* Vàng cam */
     margin-left: 5px;
 }
 
 .item-seller {
     font-size: 0.9rem;
     margin-bottom: 15px;
-    color: #CCCCCC; /* Xám nhạt */
+    color: #cccccc; /* Xám nhạt */
 }
 
 .seller-name {
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
     font-weight: 500;
 }
 
 .btn-buy {
     width: 100%;
     padding: 10px;
-    background-color: #FFD700; /* Nền vàng */
+    background-color: #ffd700; /* Nền vàng */
     color: #000000; /* Chữ đen */
     border: none;
     border-radius: 5px;
@@ -692,7 +720,7 @@ body.mua-ban-page .hero {
 }
 
 .btn-buy:hover {
-    background-color: #FFA500; /* Vàng cam khi hover */
+    background-color: #ffa500; /* Vàng cam khi hover */
 }
 
 /* Pagination Styles */
@@ -713,7 +741,7 @@ body.mua-ban-page .hero {
     background-color: #222222; /* Nền đen nhạt */
     border: 1px solid #444444; /* Viền xám */
     border-radius: 5px;
-    color: #FFD700; /* Chữ vàng */
+    color: #ffd700; /* Chữ vàng */
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -722,9 +750,9 @@ body.mua-ban-page .hero {
 
 .page-btn:hover,
 .page-btn.active {
-    background-color: #FFD700; /* Nền vàng */
+    background-color: #ffd700; /* Nền vàng */
     color: #000000; /* Chữ đen */
-    border-color: #FFA500; /* Viền vàng cam */
+    border-color: #ffa500; /* Viền vàng cam */
 }
 
 .page-btn.next {
@@ -755,8 +783,8 @@ body.mua-ban-page .hero {
     gap: 8px;
     padding: 10px 20px;
     background-color: transparent;
-    color: #FFD700;
-    border: 2px solid #FFD700;
+    color: #ffd700;
+    border: 2px solid #ffd700;
     border-radius: 5px;
     text-decoration: none;
     font-weight: 500;
@@ -764,7 +792,7 @@ body.mua-ban-page .hero {
 }
 
 .view-more-btn:hover {
-    background-color: #FFD700;
+    background-color: #ffd700;
     color: #000000;
     transform: translateY(-3px);
 }
@@ -780,14 +808,16 @@ body.mua-ban-page .hero {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
     border: 1px solid #444444; /* Viền xám */
 }
 
 .news-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(255, 215, 0, 0.2); /* Bóng vàng */
-    border-color: #FFD700; /* Viền vàng khi hover */
+    border-color: #ffd700; /* Viền vàng khi hover */
 }
 
 .news-image {
@@ -813,31 +843,31 @@ body.mua-ban-page .hero {
 .news-content h4 {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
     letter-spacing: 1px;
 }
 
 .news-date {
     font-size: 0.9rem;
-    color: #FFA500; /* Vàng cam */
+    color: #ffa500; /* Vàng cam */
     margin-bottom: 10px;
 }
 
 .news-excerpt {
-    color: #CCCCCC; /* Xám nhạt */
+    color: #cccccc; /* Xám nhạt */
     margin-bottom: 15px;
     font-size: 1.05rem; /* Tăng kích thước chữ một chút để dễ đọc */
 }
 
 .read-more {
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .read-more:hover {
-    color: #FFA500; /* Vàng cam khi hover */
+    color: #ffa500; /* Vàng cam khi hover */
 }
 
 /* Liên Hệ Section */
@@ -854,7 +884,7 @@ body.mua-ban-page .hero {
 .contact-info h3,
 .contact-form h3 {
     font-size: 1.8rem;
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
     margin-bottom: 25px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -867,13 +897,13 @@ body.mua-ban-page .hero {
 
 .contact-item i {
     font-size: 1.2rem;
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
     margin-right: 15px;
     width: 20px;
 }
 
 .contact-item p {
-    color: #FFA500; /* Vàng cam */
+    color: #ffa500; /* Vàng cam */
 }
 
 .form-group {
@@ -890,13 +920,13 @@ body.mua-ban-page .hero {
     font-size: 1rem;
     transition: border-color 0.3s ease;
     background-color: #222222; /* Nền đen nhạt */
-    color: #FFD700; /* Chữ vàng */
+    color: #ffd700; /* Chữ vàng */
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #FFD700; /* Viền vàng khi focus */
+    border-color: #ffd700; /* Viền vàng khi focus */
     box-shadow: 0 0 5px rgba(255, 215, 0, 0.3); /* Thêm hiệu ứng sáng khi focus */
 }
 
@@ -908,10 +938,10 @@ body.mua-ban-page .hero {
 /* Footer */
 .footer {
     background-color: #000000; /* Nền đen */
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
     padding: 60px 0 20px;
-    border-top: 1px solid #FFD700; /* Viền vàng */
-    font-family: 'Great Vibes', 'Dancing Script', 'Alex Brush', cursive;
+    border-top: 1px solid #ffd700; /* Viền vàng */
+    font-family: "Great Vibes", "Dancing Script", "Alex Brush", cursive;
 }
 
 .footer-content {
@@ -925,11 +955,11 @@ body.mua-ban-page .hero {
 .footer-section h4 {
     font-size: 1.3rem;
     margin-bottom: 20px;
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
 }
 
 .footer-section p {
-    color: #FFA500; /* Vàng cam */
+    color: #ffa500; /* Vàng cam */
     margin-bottom: 20px;
 }
 
@@ -942,13 +972,13 @@ body.mua-ban-page .hero {
 }
 
 .footer-section ul li a {
-    color: #FFA500; /* Vàng cam */
+    color: #ffa500; /* Vàng cam */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-    color: #FFD700; /* Vàng đậm khi hover */
+    color: #ffd700; /* Vàng đậm khi hover */
 }
 
 .social-links {
@@ -963,14 +993,14 @@ body.mua-ban-page .hero {
     width: 40px;
     height: 40px;
     background-color: rgba(255, 215, 0, 0.1); /* Nền vàng mờ */
-    color: #FFD700; /* Màu vàng */
+    color: #ffd700; /* Màu vàng */
     border-radius: 50%;
     transition: background-color 0.3s ease;
-    border: 1px solid #FFD700; /* Viền vàng */
+    border: 1px solid #ffd700; /* Viền vàng */
 }
 
 .social-links a:hover {
-    background-color: #FFD700; /* Nền vàng khi hover */
+    background-color: #ffd700; /* Nền vàng khi hover */
     color: #000000; /* Chữ đen khi hover */
 }
 
@@ -978,15 +1008,17 @@ body.mua-ban-page .hero {
     text-align: center;
     padding-top: 20px;
     border-top: 1px solid rgba(255, 215, 0, 0.3); /* Viền vàng mờ */
-    color: #FFA500; /* Vàng cam */
+    color: #ffa500; /* Vàng cam */
 }
 
 .copyright-text {
-    font-family: 'Great Vibes', 'Dancing Script', 'Alex Brush', cursive !important; /* Font thư pháp */
+    font-family:
+        "Great Vibes", "Dancing Script", "Alex Brush", cursive !important; /* Font thư pháp */
 }
 
 #current-year {
-    font-family: 'Great Vibes', 'Dancing Script', 'Alex Brush', cursive !important; /* Font thư pháp */
+    font-family:
+        "Great Vibes", "Dancing Script", "Alex Brush", cursive !important; /* Font thư pháp */
 }
 
 /* Animations */
@@ -1040,7 +1072,7 @@ body.mua-ban-page .hero {
         visibility: hidden;
         transition: all 0.3s ease;
         z-index: 999;
-        border-bottom: 1px solid #FFD700;
+        border-bottom: 1px solid #ffd700;
     }
 
     .main-nav.active {
@@ -1149,18 +1181,18 @@ body.mua-ban-page .hero {
 .breadcrumb {
     display: flex;
     align-items: center;
-    color: #FFA500;
+    color: #ffa500;
     font-size: 0.9rem;
 }
 
 .breadcrumb a {
-    color: #FFD700;
+    color: #ffd700;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .breadcrumb a:hover {
-    color: #FFA500;
+    color: #ffa500;
 }
 
 .breadcrumb span {
@@ -1169,7 +1201,7 @@ body.mua-ban-page .hero {
 }
 
 .breadcrumb .current {
-    color: #CCCCCC;
+    color: #cccccc;
 }
 
 .event-detail {
@@ -1187,7 +1219,7 @@ body.mua-ban-page .hero {
 
 .event-title {
     font-size: 2.5rem;
-    color: #FFD700;
+    color: #ffd700;
     margin-bottom: 20px;
     line-height: 1.2;
 }
@@ -1200,7 +1232,7 @@ body.mua-ban-page .hero {
 }
 
 .event-type {
-    background-color: #FFD700;
+    background-color: #ffd700;
     color: #000000;
     padding: 5px 15px;
     border-radius: 20px;
@@ -1208,8 +1240,9 @@ body.mua-ban-page .hero {
     font-weight: 500;
 }
 
-.event-date, .event-views {
-    color: #FFA500;
+.event-date,
+.event-views {
+    color: #ffa500;
     font-size: 0.9rem;
 }
 
@@ -1240,14 +1273,14 @@ body.mua-ban-page .hero {
 
 .event-excerpt {
     font-size: 1.2rem;
-    color: #FFA500;
+    color: #ffa500;
     margin-bottom: 25px;
     font-style: italic;
     line-height: 1.5;
 }
 
 .event-body {
-    color: #CCCCCC;
+    color: #cccccc;
     line-height: 1.8;
     margin-bottom: 25px;
 }
@@ -1256,23 +1289,24 @@ body.mua-ban-page .hero {
     margin-bottom: 20px;
 }
 
-.event-body ul, .event-body ol {
+.event-body ul,
+.event-body ol {
     margin-bottom: 20px;
     padding-left: 30px;
 }
 
 .event-body li {
     margin-bottom: 10px;
-    color: #FFA500;
+    color: #ffa500;
 }
 
 .event-body strong {
-    color: #FFD700;
+    color: #ffd700;
 }
 
 .event-author {
     text-align: right;
-    color: #FFA500;
+    color: #ffa500;
     font-size: 0.9rem;
     padding-top: 20px;
     border-top: 1px solid #333333;
@@ -1304,7 +1338,7 @@ body.mua-ban-page .hero {
 
 .related-title {
     font-size: 1.8rem;
-    color: #FFD700;
+    color: #ffd700;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -1319,14 +1353,16 @@ body.mua-ban-page .hero {
     background-color: #111111;
     border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
     border: 1px solid #333333;
 }
 
 .related-event-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(255, 215, 0, 0.1);
-    border-color: #FFD700;
+    border-color: #ffd700;
 }
 
 .related-event-image {
@@ -1354,18 +1390,18 @@ body.mua-ban-page .hero {
 }
 
 .related-event-content h4 a {
-    color: #FFD700;
+    color: #ffd700;
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.3s ease;
 }
 
 .related-event-content h4 a:hover {
-    color: #FFA500;
+    color: #ffa500;
 }
 
 .related-event-date {
-    color: #FFA500;
+    color: #ffa500;
     font-size: 0.9rem;
 }
 
@@ -1397,6 +1433,140 @@ body.mua-ban-page .hero {
     .related-grid {
         grid-template-columns: 1fr;
     }
+
+    /* Cẩm Nang Section */
+    .cam-nang {
+        background-color: #111111; /* Nền đen xám */
+        padding: 80px 0;
+    }
+
+    .cam-nang-content {
+        margin-top: 50px;
+    }
+
+    .cam-nang .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .cam-nang .feature-card {
+        background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+        border: 2px solid #333333;
+        border-radius: 15px;
+        padding: 40px 30px;
+        text-align: center;
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .cam-nang .feature-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 215, 0, 0.1),
+            transparent
+        );
+        transition: left 0.6s ease;
+    }
+
+    .cam-nang .feature-card:hover::before {
+        left: 100%;
+    }
+
+    .cam-nang .feature-card:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 20px 40px rgba(255, 215, 0, 0.3);
+        border-color: #ffd700;
+    }
+
+    .cam-nang .feature-card i {
+        font-size: 3.5rem;
+        color: #ffd700;
+        margin-bottom: 25px;
+        display: block;
+        text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    }
+
+    .cam-nang .feature-card h4 {
+        font-size: 1.5rem;
+        color: #ffd700;
+        margin-bottom: 20px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .cam-nang .feature-card p {
+        color: #ffa500;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    /* Style riêng cho card Loot Map có thể click */
+    .cam-nang .feature-card[onclick] {
+        cursor: pointer;
+        position: relative;
+    }
+
+    .cam-nang .feature-card[onclick]::after {
+        content: "\f35d";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        font-size: 0.9rem;
+        color: #ffd700;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .cam-nang .feature-card[onclick]:hover::after {
+        opacity: 1;
+    }
+
+    .cam-nang .feature-card[onclick]:hover {
+        transform: translateY(-15px) scale(1.02);
+        box-shadow: 0 20px 40px rgba(255, 215, 0, 0.4);
+        border-color: #ffd700;
+    }
+
+    /* Responsive cho Cẩm Nang */
+    @media (max-width: 768px) {
+        .cam-nang {
+            padding: 60px 0;
+        }
+
+        .cam-nang .features {
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        .cam-nang .feature-card {
+            padding: 30px 20px;
+        }
+
+        .cam-nang .feature-card i {
+            font-size: 3rem;
+        }
+
+        .cam-nang .feature-card h4 {
+            font-size: 1.3rem;
+        }
+
+        .cam-nang .feature-card p {
+            font-size: 1rem;
+        }
+    }
 }
 
 /* Pé Heo Game Styles */
@@ -1404,7 +1574,7 @@ body.mua-ban-page .hero {
     margin-top: 30px;
     padding: 20px;
     background-color: rgba(255, 215, 0, 0.1);
-    border: 2px solid #FFD700;
+    border: 2px solid #ffd700;
     border-radius: 15px;
     text-align: center;
     max-width: 400px;
@@ -1420,32 +1590,137 @@ body.mua-ban-page .hero {
 
 #heo-instruction {
     font-size: 1.2rem;
-    color: #FFD700;
+    color: #ffd700;
     margin-bottom: 15px;
     font-weight: 700;
-    font-family: 'Be Vietnam Pro', 'Noto Serif', serif;
+    font-family: "Be Vietnam Pro", "Noto Serif", serif;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 #heo-input {
     width: 100%;
     padding: 12px 15px;
-    border: 2px solid #FFA500;
+    border: 2px solid #ffa500;
     border-radius: 8px;
     background-color: rgba(0, 0, 0, 0.7);
-    color: #FFD700;
+    color: #ffd700;
     font-size: 1.1rem;
     text-align: center;
     margin-bottom: 15px;
     transition: all 0.3s ease;
-    font-family: 'Be Vietnam Pro', 'Noto Serif', serif;
+    font-family: "Be Vietnam Pro", "Noto Serif", serif;
 }
 
 #heo-input:focus {
     outline: none;
-    border-color: #FFD700;
+    border-color: #ffd700;
     box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Cẩm Nang Section */
+.cam-nang {
+    background-color: #111111; /* Nền đen xám */
+    padding: 80px 0;
+}
+
+.cam-nang-content {
+    margin-top: 50px;
+}
+
+.cam-nang .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.cam-nang .feature-card {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    border: 2px solid #333333;
+    border-radius: 15px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.cam-nang .feature-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 215, 0, 0.1),
+        transparent
+    );
+    transition: left 0.6s ease;
+}
+
+.cam-nang .feature-card:hover::before {
+    left: 100%;
+}
+
+.cam-nang .feature-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(255, 215, 0, 0.3);
+    border-color: #ffd700;
+}
+
+.cam-nang .feature-card i {
+    font-size: 3.5rem;
+    color: #ffd700;
+    margin-bottom: 25px;
+    display: block;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.cam-nang .feature-card h4 {
+    font-size: 1.5rem;
+    color: #ffd700;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cam-nang .feature-card p {
+    color: #ffa500;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Responsive cho Cẩm Nang */
+@media (max-width: 768px) {
+    .cam-nang {
+        padding: 60px 0;
+    }
+
+    .cam-nang .features {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .cam-nang .feature-card {
+        padding: 30px 20px;
+    }
+
+    .cam-nang .feature-card i {
+        font-size: 3rem;
+    }
+
+    .cam-nang .feature-card h4 {
+        font-size: 1.3rem;
+    }
+
+    .cam-nang .feature-card p {
+        font-size: 1rem;
+    }
 }
 
 #heo-input::placeholder {
