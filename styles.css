@@ -215,7 +215,7 @@ p,
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px 20px;
 }
 
 .logo {
@@ -225,7 +225,7 @@ p,
 }
 
 .logo img {
-    height: 100px;
+    height: 70px;
     width: auto;
     display: block;
     transition: transform 0.3s ease;
@@ -241,7 +241,7 @@ p,
 }
 
 .logo h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #ffd700; /* Màu vàng */
     margin-bottom: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -266,6 +266,7 @@ p,
     text-decoration: none;
     color: #ffd700; /* Màu vàng */
     font-weight: 500;
+    font-size: 0.65rem; /* Giảm kích thước font chữ */
     transition: color 0.3s ease;
     position: relative;
 }
@@ -335,6 +336,13 @@ body.mua-ban-page .hero {
     background:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
         url("img/image2.png") center/cover no-repeat;
+}
+
+/* Hero Section cho trang service */
+body.service-page .hero {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+        url("img/image.png") center/cover no-repeat;
 }
 
 .hero-content h2 {
@@ -1115,7 +1123,7 @@ body.mua-ban-page .hero {
     }
 
     .main-nav ul li a {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         text-align: center;
         display: block;
         padding: 10px;

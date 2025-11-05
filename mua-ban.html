@@ -1,326 +1,408 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Khu Mua Bán - Bang Hoa Sơn</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khu Mua Bán - Bang Hoa Sơn</title>
+        <!-- Open Graph Meta Tags for Facebook -->
+        <meta property="og:title" content="Khu Mua Bán - Bang Hoa Sơn" />
+        <meta
+            property="og:description"
+            content="Nơi giao dịch các vật phẩm quý giá và tài khoản game. Giao dịch an toàn, vật phẩm đa dạng, cộng đồng uy tín. Coming Soon!"
+        />
+        <meta
+            property="og:image"
+            content="https://hoason10.com/img/thumbnail.png"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:url" content="https://hoason10.com/mua-ban.html" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Bang Hoa Sơn" />
 
-    <!-- Open Graph Meta Tags for Facebook -->
-    <meta property="og:title" content="Khu Mua Bán - Bang Hoa Sơn">
-    <meta property="og:description"
-        content="Nơi giao dịch các vật phẩm quý giá và tài khoản game. Giao dịch an toàn, vật phẩm đa dạng, cộng đồng uy tín. Coming Soon!">
-    <meta property="og:image" content="https://hoason10.com/img/thumbnail.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://hoason10.com/mua-ban.html">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Bang Hoa Sơn">
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Khu Mua Bán - Bang Hoa Sơn" />
+        <meta
+            name="twitter:description"
+            content="Nơi giao dịch các vật phẩm quý giá và tài khoản game. Giao dịch an toàn, vật phẩm đa dạng, cộng đồng uy tín. Coming Soon!"
+        />
+        <meta
+            name="twitter:image"
+            content="https://hoason10.com/img/thumbnail.png"
+        />
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Khu Mua Bán - Bang Hoa Sơn">
-    <meta name="twitter:description"
-        content="Nơi giao dịch các vật phẩm quý giá và tài khoản game. Giao dịch an toàn, vật phẩm đa dạng, cộng đồng uy tín. Coming Soon!">
-    <meta name="twitter:image" content="https://hoason10.com/img/thumbnail.png">
+        <!-- Zalo Meta Tags -->
+        <meta
+            property="zalo:share_url"
+            content="https://hoason10.com/mua-ban.html"
+        />
+        <meta
+            property="zalo:share_title"
+            content="Khu Mua Bán - Bang Hoa Sơn"
+        />
+        <meta
+            property="zalo:share_description"
+            content="Nơi giao dịch các vật phẩm quý giá và tài khoản game. Giao dịch an toàn, vật phẩm đa dạng, cộng đồng uy tín. Coming Soon!"
+        />
+        <meta
+            property="zalo:share_image"
+            content="https://hoason10.com/img/thumbnail.png"
+        />
 
-    <!-- Zalo Meta Tags -->
-    <meta property="zalo:share_url" content="https://hoason10.com/mua-ban.html">
-    <meta property="zalo:share_title" content="Khu Mua Bán - Bang Hoa Sơn">
-    <meta property="zalo:share_description"
-        content="Nơi giao dịch các vật phẩm quý giá và tài khoản game. Giao dịch an toàn, vật phẩm đa dạng, cộng đồng uy tín. Coming Soon!">
-    <meta property="zalo:share_image" content="https://hoason10.com/img/thumbnail.png">
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@300;400;700;900&family=Playfair+Display:wght@400;700;900&family=Noto+Serif:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@300;400;700;900&family=Playfair+Display:wght@400;700;900&family=Noto+Serif:wght@400;700&display=swap");
 
-    <link rel="stylesheet" href="styles.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@300;400;700;900&family=Playfair+Display:wght@400;700;900&family=Noto+Serif:wght@400;700&display=swap"
-        rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@300;400;700;900&family=Playfair+Display:wght@400;700;900&family=Noto+Serif:wght@400;700&display=swap');
+            /* Font chữ tiếng Việt có dấu tốt hơn */
+            @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;700;900&display=swap");
 
-        /* Font chữ tiếng Việt có dấu tốt hơn */
-        @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;700;900&display=swap');
+            /* Font thư pháp hỗ trợ Unicode tốt */
+            @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Alex+Brush&family=Satisfy&family=Pacifico&family=Lobster&family=Kalam:wght@300;400;700&family=ZCOOL+XiaoWei&family=ZCOOL+KuaiLe&display=swap");
+        </style>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+    </head>
 
-        /* Font thư pháp hỗ trợ Unicode tốt */
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Alex+Brush&family=Satisfy&family=Pacifico&family=Lobster&family=Kalam:wght@300;400;700&family=ZCOOL+XiaoWei&family=ZCOOL+KuaiLe&display=swap');
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-
-<body class="mua-ban-page">
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <img src="img/logo.png" alt="Hoa Sơn - Nghịch Thủy Hàn S1">
-                <div class="logo-text">
-                    <h1>Hoa Sơn</h1>
-                    <span>Nghịch Thủy Hàn - S1</span>
+    <body class="mua-ban-page">
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <img
+                        src="img/logo.png"
+                        alt="Hoa Sơn - Nghịch Thủy Hàn S1"
+                    />
+                    <div class="logo-text">
+                        <h1>Hoa Sơn</h1>
+                        <span>Nghịch Thủy Hàn - S1</span>
+                    </div>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="nav-link">Trang Chủ</a>
+                        </li>
+                        <li>
+                            <a href="index.html#gioi-thieu" class="nav-link"
+                                >Giới Thiệu</a
+                            >
+                        </li>
+                        <li>
+                            <a href="index.html#tuyen-dung" class="nav-link"
+                                >Tuyển Dụng</a
+                            >
+                        </li>
+                        <li>
+                            <a href="service.html" class="nav-link">Service</a>
+                        </li>
+                        <li>
+                            <a href="mua-ban.html" class="nav-link active"
+                                >Mua Bán</a
+                            >
+                        </li>
+                        <!-- <li><a href="index.html#tin-tuc" class="nav-link">Tin Tức</a></li> -->
+                        <!-- <li><a href="index.html#lien-he" class="nav-link">Liên Hệ</a></li> -->
+                    </ul>
+                </nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
                 </div>
             </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html" class="nav-link">Trang Chủ</a></li>
-                    <li><a href="index.html#gioi-thieu" class="nav-link">Giới Thiệu</a></li>
-                    <li><a href="index.html#tuyen-dung" class="nav-link">Tuyển Dụng</a></li>
-                    <li><a href="mua-ban.html" class="nav-link active">Mua Bán</a></li>
-                    <!-- <li><a href="index.html#tin-tuc" class="nav-link">Tin Tức</a></li> -->
-                    <!-- <li><a href="index.html#lien-he" class="nav-link">Liên Hệ</a></li> -->
-                </ul>
-            </nav>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </header>
+        </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h2>Khu Mua Bán Hoa Sơn</h2>
-                    <p>Nơi giao dịch các vật phẩm quý giá</p>
+        <main>
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h2>Khu Mua Bán Hoa Sơn</h2>
+                        <p>Nơi giao dịch các vật phẩm quý giá</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Coming Soon Section -->
-        <section class="section mua-ban">
+            <!-- Coming Soon Section -->
+            <section class="section mua-ban">
+                <div class="container">
+                    <div class="coming-soon-container">
+                        <div class="coming-soon-content">
+                            <i class="fas fa-clock coming-soon-icon"></i>
+                            <h2 class="coming-soon-title">Coming Soon</h2>
+                            <p class="coming-soon-description">
+                                Khu mua bán của Hoa Sơn đang được xây dựng và sẽ
+                                sớm ra mắt!<br />
+                                Đây sẽ là nơi tập trung các vật phẩm quý giá,
+                                tài khoản game và nhiều hơn nữa.<br />
+                                Hãy quay lại sau để không bỏ lỡ những món đồ giá
+                                trị!
+                            </p>
+                            <div class="coming-soon-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>Giao dịch an toàn</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-gem"></i>
+                                    <span>Vật phẩm đa dạng</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Cộng đồng uy tín</span>
+                                </div>
+                            </div>
+                            <div class="coming-soon-cta">
+                                <a
+                                    href="https://discord.gg/42WP55wtGx"
+                                    target="_blank"
+                                    class="btn btn-primary"
+                                >
+                                    <i class="fab fa-discord"></i> Tham gia
+                                    Discord để cập nhật
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
             <div class="container">
-                <div class="coming-soon-container">
-                    <div class="coming-soon-content">
-                        <i class="fas fa-clock coming-soon-icon"></i>
-                        <h2 class="coming-soon-title">Coming Soon</h2>
-                        <p class="coming-soon-description">
-                            Khu mua bán của Hoa Sơn đang được xây dựng và sẽ sớm ra mắt!<br>
-                            Đây sẽ là nơi tập trung các vật phẩm quý giá, tài khoản game và nhiều hơn nữa.<br>
-                            Hãy quay lại sau để không bỏ lỡ những món đồ giá trị!
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Bang Hoa Sơn</h3>
+                        <p>
+                            Bang hội võ hiệp đỉnh cao với truyền thống lâu đời
+                            và tinh thần đoàn kết
                         </p>
-                        <div class="coming-soon-features">
-                            <div class="feature-item">
-                                <i class="fas fa-shield-alt"></i>
-                                <span>Giao dịch an toàn</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-gem"></i>
-                                <span>Vật phẩm đa dạng</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-users"></i>
-                                <span>Cộng đồng uy tín</span>
-                            </div>
-                        </div>
-                        <div class="coming-soon-cta">
-                            <a href="https://discord.gg/42WP55wtGx" target="_blank" class="btn btn-primary">
-                                <i class="fab fa-discord"></i> Tham gia Discord để cập nhật
-                            </a>
+                        <div class="social-links">
+                            <a
+                                href="https://discord.gg/42WP55wtGx"
+                                target="_blank"
+                                ><i class="fab fa-discord"></i
+                            ></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-twitch"></i></a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-    </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Bang Hoa Sơn</h3>
-                    <p>Bang hội võ hiệp đỉnh cao với truyền thống lâu đời và tinh thần đoàn kết</p>
-                    <div class="social-links">
-                        <a href="https://discord.gg/42WP55wtGx" target="_blank"><i class="fab fa-discord"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-twitch"></i></a>
+                    <div class="footer-section">
+                        <!-- <h4>Liên Kết Nhanh</h4>
+                    <ul>
+                        <li><a href="#gioi-thieu">Giới Thiệu</a></li>
+                        <li><a href="#mua-ban">Mua Bán</a></li>
+                        <li><a href="#tin-tuc">Tin Tức</a></li>
+                        <li><a href="#lien-he">Liên Hệ</a></li>
+                    </ul> -->
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Liên Hệ</h4>
+                        <ul>
+                            <li>
+                                <i class="fab fa-discord"></i> Discord:
+                                <a
+                                    href="https://discord.gg/42WP55wtGx"
+                                    target="_blank"
+                                    >Bang Hoa Sơn</a
+                                >
+                            </li>
+                            <li>
+                                <i class="fas fa-gamepad"></i> Game: Nghịch Thủy
+                                Hàn
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="footer-section">
-                    <h4>Liên Kết Nhanh</h4>
-                    <ul>
-                        <li><a href="index.html#gioi-thieu">Giới Thiệu</a></li>
-                        <li><a href="mua-ban.html">Mua Bán</a></li>
-                        <li><a href="index.html#tin-tuc">Tin Tức</a></li>
-                        <!-- <li><a href="index.html#lien-he">Liên Hệ</a></li> -->
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Quy Định</h4>
-                    <ul>
-                        <li><a href="#">Điều Khoản Sử Dụng</a></li>
-                        <li><a href="#">Chính Sách Bảo Mật</a></li>
-                        <li><a href="#">Quy Định Bang Hội</a></li>
-                        <li><a href="#">Hướng Dẫn Mua Bán</a></li>
-                    </ul>
+                <div class="footer-bottom">
+                    <p>
+                        &copy; <span id="current-year"></span> Bang Hoa Sơn. Tất
+                        cả quyền được bảo lưu.
+                    </p>
                 </div>
             </div>
+        </footer>
 
-            <div class="footer-bottom">
-                <p>&copy; <span id="current-year"></span> Bang Hoa Sơn. Tất cả quyền được bảo lưu.</p>
-            </div>
-        </div>
-    </footer>
+        <script src="script.js"></script>
+        <script>
+            // Cập nhật năm hiện tại
+            document.getElementById("current-year").textContent =
+                new Date().getFullYear();
 
-    <script src="script.js"></script>
-    <script>
-        // Cập nhật năm hiện tại
-        document.getElementById('current-year').textContent = new Date().getFullYear();
+            // Cập nhật Open Graph URL động
+            const currentUrl = window.location.href;
+            // Chuẩn hóa URL - loại bỏ dấu / ở cuối nếu có
+            const normalizedUrl = currentUrl.endsWith("/")
+                ? currentUrl.slice(0, -1)
+                : currentUrl;
 
-        // Cập nhật Open Graph URL động
-        const currentUrl = window.location.href;
-        // Chuẩn hóa URL - loại bỏ dấu / ở cuối nếu có
-        const normalizedUrl = currentUrl.endsWith('/') ? currentUrl.slice(0, -1) : currentUrl;
-
-        // Cập nhật canonical URL
-        let canonicalLink = document.querySelector('link[rel="canonical"]');
-        if (!canonicalLink) {
-            canonicalLink = document.createElement('link');
-            canonicalLink.rel = 'canonical';
-            document.head.appendChild(canonicalLink);
-        }
-        canonicalLink.href = normalizedUrl;
-
-        // Cập nhật OG tags
-        const ogUrlTags = document.querySelectorAll('meta[property="og:url"], meta[property="og:image"], meta[name="twitter:image"]');
-        ogUrlTags.forEach(tag => {
-            if (tag.getAttribute('property') === 'og:url') {
-                tag.setAttribute('content', normalizedUrl);
-            } else if (tag.getAttribute('property') === 'og:image' || tag.getAttribute('name') === 'twitter:image') {
-                // Lấy domain từ URL hiện tại để xây dựng URL ảnh
-                const urlParts = normalizedUrl.split('/');
-                const domain = urlParts[0] + '//' + urlParts[2];
-                const imageUrl = domain + '/img/thumbnail.png';
-                tag.setAttribute('content', imageUrl);
+            // Cập nhật canonical URL
+            let canonicalLink = document.querySelector('link[rel="canonical"]');
+            if (!canonicalLink) {
+                canonicalLink = document.createElement("link");
+                canonicalLink.rel = "canonical";
+                document.head.appendChild(canonicalLink);
             }
-        });
+            canonicalLink.href = normalizedUrl;
 
-        // Cập nhật Zalo tags
-        const zaloUrlTags = document.querySelectorAll('meta[property="zalo:share_url"], meta[property="zalo:share_image"]');
-        zaloUrlTags.forEach(tag => {
-            if (tag.getAttribute('property') === 'zalo:share_url') {
-                tag.setAttribute('content', normalizedUrl);
-            } else if (tag.getAttribute('property') === 'zalo:share_image') {
-                // Lấy domain từ URL hiện tại để xây dựng URL ảnh
-                const urlParts = normalizedUrl.split('/');
-                const domain = urlParts[0] + '//' + urlParts[2];
-                const imageUrl = domain + '/img/thumbnail.png';
-                tag.setAttribute('content', imageUrl);
-            }
-        });
-    </script>
+            // Cập nhật OG tags
+            const ogUrlTags = document.querySelectorAll(
+                'meta[property="og:url"], meta[property="og:image"], meta[name="twitter:image"]',
+            );
+            ogUrlTags.forEach((tag) => {
+                if (tag.getAttribute("property") === "og:url") {
+                    tag.setAttribute("content", normalizedUrl);
+                } else if (
+                    tag.getAttribute("property") === "og:image" ||
+                    tag.getAttribute("name") === "twitter:image"
+                ) {
+                    // Lấy domain từ URL hiện tại để xây dựng URL ảnh
+                    const urlParts = normalizedUrl.split("/");
+                    const domain = urlParts[0] + "//" + urlParts[2];
+                    const imageUrl = domain + "/img/thumbnail.png";
+                    tag.setAttribute("content", imageUrl);
+                }
+            });
 
-    <style>
-        .coming-soon-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 60vh;
-            text-align: center;
-            padding: 40px 20px;
-        }
+            // Cập nhật Zalo tags
+            const zaloUrlTags = document.querySelectorAll(
+                'meta[property="zalo:share_url"], meta[property="zalo:share_image"]',
+            );
+            zaloUrlTags.forEach((tag) => {
+                if (tag.getAttribute("property") === "zalo:share_url") {
+                    tag.setAttribute("content", normalizedUrl);
+                } else if (
+                    tag.getAttribute("property") === "zalo:share_image"
+                ) {
+                    // Lấy domain từ URL hiện tại để xây dựng URL ảnh
+                    const urlParts = normalizedUrl.split("/");
+                    const domain = urlParts[0] + "//" + urlParts[2];
+                    const imageUrl = domain + "/img/thumbnail.png";
+                    tag.setAttribute("content", imageUrl);
+                }
+            });
+        </script>
 
-        .coming-soon-content {
-            max-width: 800px;
-            background-color: #111111;
-            border-radius: 15px;
-            padding: 50px 40px;
-            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
-            border: 1px solid #333333;
-        }
-
-        .coming-soon-icon {
-            font-size: 4rem;
-            color: #FFD700;
-            margin-bottom: 30px;
-            animation: pulse 2s infinite;
-        }
-
-        .coming-soon-title {
-            font-family: 'Great Vibes', 'Dancing Script', 'Alex Brush', cursive;
-            font-size: 3.5rem;
-            color: #FFD700;
-            margin-bottom: 25px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .coming-soon-description {
-            font-size: 1.2rem;
-            color: #FFA500;
-            line-height: 1.8;
-            margin-bottom: 40px;
-        }
-
-        .coming-soon-features {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-bottom: 40px;
-            flex-wrap: wrap;
-        }
-
-        .feature-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-            color: #FFA500;
-        }
-
-        .feature-item i {
-            font-size: 2rem;
-            color: #FFD700;
-        }
-
-        .feature-item span {
-            font-size: 1rem;
-        }
-
-        .coming-soon-cta {
-            margin-top: 20px;
-        }
-
-        .coming-soon-cta .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 15px 30px;
-            font-size: 1.1rem;
-        }
-
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
+        <style>
+            .coming-soon-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 60vh;
+                text-align: center;
+                padding: 40px 20px;
             }
 
-            50% {
-                transform: scale(1.1);
-            }
-
-            100% {
-                transform: scale(1);
-            }
-        }
-
-        @media (max-width: 768px) {
             .coming-soon-content {
-                padding: 30px 20px;
+                max-width: 800px;
+                background-color: #111111;
+                border-radius: 15px;
+                padding: 50px 40px;
+                box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
+                border: 1px solid #333333;
+            }
+
+            .coming-soon-icon {
+                font-size: 4rem;
+                color: #ffd700;
+                margin-bottom: 30px;
+                animation: pulse 2s infinite;
             }
 
             .coming-soon-title {
-                font-size: 2.5rem;
-            }
-
-            .coming-soon-features {
-                flex-direction: column;
-                gap: 20px;
+                font-family:
+                    "Great Vibes", "Dancing Script", "Alex Brush", cursive;
+                font-size: 3.5rem;
+                color: #ffd700;
+                margin-bottom: 25px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             }
 
             .coming-soon-description {
+                font-size: 1.2rem;
+                color: #ffa500;
+                line-height: 1.8;
+                margin-bottom: 40px;
+            }
+
+            .coming-soon-features {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                margin-bottom: 40px;
+                flex-wrap: wrap;
+            }
+
+            .feature-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                color: #ffa500;
+            }
+
+            .feature-item i {
+                font-size: 2rem;
+                color: #ffd700;
+            }
+
+            .feature-item span {
+                font-size: 1rem;
+            }
+
+            .coming-soon-cta {
+                margin-top: 20px;
+            }
+
+            .coming-soon-cta .btn {
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+                padding: 15px 30px;
                 font-size: 1.1rem;
             }
-        }
-    </style>
-</body>
 
+            @keyframes pulse {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.1);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+
+            @media (max-width: 768px) {
+                .coming-soon-content {
+                    padding: 30px 20px;
+                }
+
+                .coming-soon-title {
+                    font-size: 2.5rem;
+                }
+
+                .coming-soon-features {
+                    flex-direction: column;
+                    gap: 20px;
+                }
+
+                .coming-soon-description {
+                    font-size: 1.1rem;
+                }
+            }
+        </style>
+    </body>
 </html>
