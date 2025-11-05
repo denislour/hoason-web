@@ -296,6 +296,19 @@ p,
     font-size: 1.5rem;
     color: #ffd700; /* Màu vàng */
     cursor: pointer;
+    z-index: 1001;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    border: 1px solid #ffd700;
+}
+
+.menu-toggle i {
+    transition: transform 0.3s ease;
+}
+
+.menu-toggle i.fa-times {
+    transform: rotate(90deg);
 }
 
 /* Hero Section */

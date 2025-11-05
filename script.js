@@ -377,6 +377,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const scrollToTopBtn = document.createElement("button");
     scrollToTopBtn.className = "scroll-to-top";
     scrollToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+    scrollToTopBtn.setAttribute("aria-label", "Scroll to top");
     document.body.appendChild(scrollToTopBtn);
 
     // Add scroll to top styles
