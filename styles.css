@@ -54,6 +54,17 @@ textarea {
     font-family: "Great Vibes", "Dancing Script", "Alex Brush", cursive;
     font-weight: 820;
     color: #ffd700; /* Màu vàng cho tiêu đề chính */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.lotus-icon {
+    height: 1em;
+    width: auto;
+    filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.5));
+    vertical-align: middle;
 }
 
 .logo span,
