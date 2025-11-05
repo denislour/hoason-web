@@ -241,7 +241,7 @@ p,
 }
 
 .logo h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #ffd700; /* Màu vàng */
     margin-bottom: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -249,7 +249,7 @@ p,
 
 .logo span {
     display: block;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: #ffa500; /* Vàng cam */
 }
 
