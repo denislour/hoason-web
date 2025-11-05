@@ -1,0 +1,60 @@
+name = "hoason10"
+compatibility_date = "2023-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Production environment
+[env.production]
+name = "hoason10"
+routes = [
+  { pattern = "hoason10.com/*", zone_name = "hoason10.com" }
+]
+
+# Preview/staging environment
+[env.preview]
+name = "hoason10-preview"
+routes = [
+  { pattern = "preview.hoason10.com/*", zone_name = "hoason10.com" }
+]
+
+# KV namespace cho rate limiting và caching (nếu cần nâng cao)
+# [[kv_namespaces]]
+# binding = "RATE_LIMIT_KV"
+# id = "your-kv-namespace-id"
+# preview_id = "your-preview-kv-namespace-id"
+
+# D1 database cho logging (nếu cần)
+# [[d1_databases]]
+# binding = "SECURITY_LOGS_DB"
+# database_name = "security_logs"
+# database_id = "your-database-id"
+
+# R2 storage cho static assets (nếu cần)
+# [[r2_buckets]]
+# binding = "ASSETS_BUCKET"
+# bucket_name = "hoason10-assets"
+
+# Environment variables cho bảo mật
+[vars]
+ENVIRONMENT = "production"
+SITE_URL = "https://hoason10.com"
+BLOCK_SUSPICIOUS_UA = "true"
+ENABLE_RATE_LIMITING = "true"
+LOG_SECURITY_EVENTS = "true"
+
+# Build configuration
+[build]
+command = ""
+
+# Workers configuration
+[build.upload]
+format = "modules"
+dir = ""
+main = "./functions/_middleware.js"
+
+# Analytics và monitoring
+[analytics]
+enabled = true
+
+# Security settings
+[placement]
+mode = "smart"

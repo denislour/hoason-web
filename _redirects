@@ -1,0 +1,135 @@
+# Force HTTPS redirect
+http://hoason10.com/* https://hoason10.com/:splat 301
+
+# Block sensitive paths and files - redirect to homepage
+/bots.txt / 301
+/crawl.php / 301
+/admin.php / 301
+/wp-admin/ / 301
+/xmlrpc.php / 301
+/.env / 301
+/config.php / 301
+/phpmyadmin/* / 301
+/admin/* / 301
+/backup/* / 301
+/database/* / 301
+/logs/* / 301
+/tmp/* / 301
+/cache/* / 301
+/vendor/* / 301
+/src/* / 301
+/node_modules/* / 301
+/.htaccess / 301
+/web.config / 301
+/.git/* / 301
+/package.json / 301
+/package-lock.json / 301
+/README.md / 301
+/.env.example / 301
+/.gitignore / 301
+/composer.json / 301
+/composer.lock / 301
+/yarn.lock / 301
+/tsconfig.json / 301
+/webpack.config.js / 301
+/gulpfile.js / 301
+/gruntfile.js / 301
+/*.js.map / 301
+/*.css.map / 301
+/assets/js/*.js.map / 301
+/assets/css/*.css.map / 301
+/source/* / 301
+/scss/* / 301
+/sass/* / 301
+/less/* / 301
+/wp-content/* / 301
+/wp-includes/* / 301
+/wp-json/* / 301
+/wp-cron.php / 301
+/wp-login.php / 301
+/wp-signup.php / 301
+/wp-activate.php / 301
+/wp-trackback.php / 301
+/wp-comments-post.php / 301
+/phpinfo.php / 301
+/test.php / 301
+/info.php / 301
+/server.php / 301
+/status.php / 301
+/health.php / 301
+/ping.php / 301
+/proxy.php / 301
+/webshell.php / 301
+/shell.php / 301
+/cmd.php / 301
+/exec.php / 301
+/system.php / 301
+
+# Game protection - chỉ cho phép trên PC màn hình lớn
+/bea-ton.html https://hoason10.com/game-desktop-only 302
+/bea-ton.html?* https://hoason10.com/game-desktop-only 302
+/game-iframe.html https://hoason10.com/game-desktop-only 302
+
+# Phòng chống direct access vào file game
+/bea-ton.html https://hoason10.com/ 301
+/bea-ton-original.html https://hoason10.com/ 301
+/game.html https://hoason10.com/ 301
+
+# Chặn các đường dẫn có thể bị exploit
+/api/test/* https://hoason10.com/ 301
+/api/debug/* https://hoason10.com/ 301
+/api/admin/* https://hoason10.com/ 301
+/console https://hoason10.com/ 301
+/debug https://hoason10.com/ 301
+/dev/* https://hoason10.com/ 301
+/test/* https://hoason10.com/ 301
+/demo/* https://hoason10.com/ 301
+/beta/* https://hoason10.com/ 301
+/staging/* https://hoason10.com/ 301
+
+# Redirect game desktop-only page (nếu có)
+/game-desktop-only /game-section.html 301
+
+# Allow important files for SEO and functionality
+/robots.txt
+/sitemap.xml
+/sitemap_index.xml
+/opengraph.png
+/og-image.png
+/twitter-image.png
+/favicon.ico
+/favicon.png
+/favicon.svg
+/apple-touch-icon.png
+/android-chrome-192x192.png
+/android-chrome-512x512.png
+/manifest.json
+/manifest.webmanifest
+/sw.js
+/service-worker.js
+/google123456789.html
+/bing-site-auth.xml
+
+# Allow API endpoints (nếu có)
+/api/*
+/api/v1/*
+/api/v2/*
+/auth/login
+/auth/callback
+/auth/token
+
+# Allow public resources
+/assets/*
+/img/*
+/css/*
+/js/*
+/fonts/*
+/static/*
+/uploads/*
+/public/*
+/media/*
+
+# Allow game assets (nhưng không cho direct access)
+/assets/games/bea-ton/*
+/img/games/bea-ton/*
+/sounds/games/bea-ton/*
