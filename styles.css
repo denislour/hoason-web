@@ -266,7 +266,7 @@ p,
     text-decoration: none;
     color: #ffd700; /* Màu vàng */
     font-weight: 500;
-    font-size: 0.65rem; /* Giảm kích thước font chữ */
+    font-size: 0.9rem; /* Tăng kích thước font chữ */
     transition: color 0.3s ease;
     position: relative;
 }
@@ -1123,7 +1123,7 @@ body.service-page .hero {
     }
 
     .main-nav ul li a {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         text-align: center;
         display: block;
         padding: 10px;
