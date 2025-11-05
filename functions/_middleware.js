@@ -157,6 +157,12 @@ export async function onRequest(context) {
     });
   }
 
+  // Cho phép iframe truy cập vào bea-ton.html từ chính trang web
+  if (url.pathname === '/bea-ton.html' && referer.includes('hoason10.com')) {
+    console.log(`ALLOWED - Iframe access: ${url.pathname} - Referer: ${referer}`);
+    return context.next();
+  }
+
   // Cho phép các file tĩnh và assets
   if (url.pathname.includes('/assets/') ||
       url.pathname.includes('/static/') ||

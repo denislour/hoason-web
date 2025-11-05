@@ -65,13 +65,13 @@ http://hoason10.com/* https://hoason10.com/:splat 301
 /exec.php / 301
 /system.php / 301
 
-# Game protection - chỉ cho phép trên PC màn hình lớn
-/bea-ton.html https://hoason10.com/game-desktop-only 302
-/bea-ton.html?* https://hoason10.com/game-desktop-only 302
-/game-iframe.html https://hoason10.com/game-desktop-only 302
+# Game protection - chỉ cho phép trên PC màn hình lớn (đã tạm vô hiệu hóa)
+# /bea-ton.html https://hoason10.com/game-desktop-only 302
+# /bea-ton.html?* https://hoason10.com/game-desktop-only 302
+# /game-iframe.html https://hoason10.com/game-desktop-only 302
 
-# Phòng chống direct access vào file game
-/bea-ton.html https://hoason10.com/ 301
+# Phòng chống direct access vào file game (đã tạm vô hiệu hóa)
+# /bea-ton.html https://hoason10.com/ 301
 /bea-ton-original.html https://hoason10.com/ 301
 /game.html https://hoason10.com/ 301
 
