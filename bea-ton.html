@@ -191,7 +191,7 @@ SOFTWARE.
                         Không lùi bước.<br />Không đầu hàng.<br />Không có lối thoát.<br /><br />Đánh trung lập cho nó chọn phe.
                     </div>
                     <div id="t4">[Enter] để Bắt đầu</div>
-                    <div id="z">by @ferronsays</div>
+                    <div id="z">by @hoason</div>
                 </div>
             </div>
             <div id="i">
@@ -996,19 +996,53 @@ SOFTWARE.
                                     t.S(this.dt.x + s.dt.x, this.dt.y + s.dt.y - this.ds),
                                     this.Gs && this.Qs(t),
                                     t.rotate(s.r + this._t),
-                                    this.li &&
-                                        (t.T(i || "#900"),
-                                        t.g(0.7 * -this.Hs.x, 0.7 * -this.Hs.y, 0.8 * this.Hs.x, this.Hs.y)),
-                                    t.T(i || "#fbca03"),
-                                    t.g(-this.Hs.x / 2, -this.Hs.y / 2, this.Hs.x, this.Hs.y),
+                                    // Vẽ nón lá Việt Nam truyền thống
+                                    // Phần thân nón chính - hình nón lá đặc trưng
+                                    t.T(i || "#4a7c59"),
                                     t.A(),
-                                    (t.strokeStyle = i || "#222"),
-                                    (t.lineWidth = 2),
-                                    t.moveTo(0, 0),
-                                    t.k(this.Hs.x / 2, 0),
+                                    // Vẽ hình nón lá với đỉnh nhọn và mép cong
+                                    t.moveTo(0, -this.Hs.y * 1.3),  // Đỉnh nón cao
+                                    t.quadraticCurveTo(-this.Hs.x * 0.3, -this.Hs.y * 1.1, -this.Hs.x * 0.9, -this.Hs.y * 0.4),
+                                    t.lineTo(-this.Hs.x * 0.9, this.Hs.y * 0.4),  // Mép dưới bên trái
+                                    t.quadraticCurveTo(-this.Hs.x * 0.3, this.Hs.y * 0.5, 0, this.Hs.y * 0.6),  // Mép dưới giữa
+                                    t.quadraticCurveTo(this.Hs.x * 0.3, this.Hs.y * 0.5, this.Hs.x * 0.9, this.Hs.y * 0.4),  // Mép dưới phải
+                                    t.quadraticCurveTo(this.Hs.x * 0.3, -this.Hs.y * 1.1, 0, -this.Hs.y * 1.3),  // Đỉnh nón bên phải
+                                    t.closePath();
+                                    t.fill(),
+                                    t.strokeStyle = i || "#2d5016",
+                                    t.lineWidth = 2,
                                     t.stroke(),
-                                    t.moveTo(this.Hs.x / 3, 0),
-                                    t.k(this.Hs.x / 3, this.Hs.y / 2),
+                                    // Vẽ gân lá đặc trưng
+                                    t.strokeStyle = i || "#2d5016",
+                                    t.lineWidth = 1.5,
+                                    t.beginPath(),
+                                    // Gân chính giữa
+                                    t.moveTo(0, -this.Hs.y * 1.3),
+                                    t.lineTo(0, this.Hs.y * 0.6),
+                                    // Gân phụ bên
+                                    t.moveTo(-this.Hs.x * 0.3, -this.Hs.y * 0.8),
+                                    t.lineTo(-this.Hs.x * 0.5, this.Hs.y * 0.3),
+                                    t.moveTo(this.Hs.x * 0.3, -this.Hs.y * 0.8),
+                                    t.lineTo(this.Hs.x * 0.5, this.Hs.y * 0.3),
+                                    t.stroke(),
+                                    // Vẽ vành nón
+                                    t.T(i || "#8B4513"),
+                                    t.beginPath(),
+                                    t.ellipse(0, this.Hs.y * 0.5, this.Hs.x * 1.0, this.Hs.y * 0.12, 0, 0, Math.PI * 2),
+                                    t.fill(),
+                                    t.strokeStyle = i || "#654321",
+                                    t.lineWidth = 1.5,
+                                    t.stroke(),
+                                    // Vẽ dây nón quai
+                                    t.strokeStyle = i || "#D2691E",
+                                    t.lineWidth = 2,
+                                    t.beginPath(),
+                                    // Dây bên trái
+                                    t.moveTo(-this.Hs.x * 0.9, this.Hs.y * 0.4),
+                                    t.quadraticCurveTo(-this.Hs.x * 1.1, this.Hs.y * 0.2, -this.Hs.x * 1.2, -this.Hs.y * 0.6),
+                                    // Dây bên phải
+                                    t.moveTo(this.Hs.x * 0.9, this.Hs.y * 0.4),
+                                    t.quadraticCurveTo(this.Hs.x * 1.1, this.Hs.y * 0.2, this.Hs.x * 1.2, -this.Hs.y * 0.6),
                                     t.stroke(),
                                     t.r();
                             }
